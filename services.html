@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fr="Services et Expertises — HK Studio" data-en="Services and Expertises — HK Studio">Services et Expertises — HK Studio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Local Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+      <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+      <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+      <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <div class="lang-drawer">
+        <button data-lang="fr" class="on">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+      <a href="contact.html" class="btn" style="width: 100%; text-align: center;" data-fr="Démarrer un Projet" data-en="Start a Project">Démarrer un Projet</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+          <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+          <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <div class="lang">
+            <button data-lang="fr" class="on">FR</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+          <a href="contact.html" class="btn" data-fr="Projet" data-en="Project">Projet</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent" data-fr="01 — Nos expertises" data-en="01 — Our expertises">01 — Nos expertises</p>
+        <h1 data-fr="Nos Services et Solutions" data-en="Our Services and Solutions">Nos Services et Solutions</h1>
+        <p class="muted" style="max-width: 60ch; font-size: 1.1rem; font-weight: 300;" data-fr="Découvrez notre catalogue de services techniques structurés pour automatiser vos tâches récurrentes et intégrer l'intelligence artificielle au cœur de vos opérations." data-en="Discover our catalog of structured technical services designed to automate recurring tasks and integrate artificial intelligence into the core of your operations.">Découvrez notre catalogue de services techniques structurés pour automatiser vos tâches récurrentes et intégrer l'intelligence artificielle au cœur de vos opérations.</p>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICES LIST -->
+    <section class="pad" style="padding-top: 60px;">
+      <div class="wrap">
+        <div class="svc-accordion">
+          <!-- Service 1 -->
+          <div class="svc-item" id="svc-1">
+            <div class="svc-row header-row">
+              <span class="no">01</span>
+              <h3 data-fr="Automatisation de Processus" data-en="Process Automation">Automatisation de Processus</h3>
+              <p data-fr="Connexions d'outils via Make, n8n et APIs personnalisées." data-en="Connecting tools via Make, n8n, and custom APIs.">Connexions d'outils via Make, n8n et APIs personnalisées.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Synchronisation en temps réel de vos outils métiers (CRM, Factures, ERP)." data-en="Real-time syncing of business tools (CRM, Invoices, ERP).">Synchronisation en temps réel de vos outils métiers (CRM, Factures, ERP).</li>
+                    <li data-fr="Automatisation de la gestion des leads, e-mails, et relances." data-en="Automation of lead management, emails, and follow-ups.">Automatisation de la gestion des leads, e-mails, et relances.</li>
+                    <li data-fr="Élimination complète des doubles saisies manuelles." data-en="Complete elimination of manual double entries.">Élimination complète des doubles saisies manuelles.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">Make.com</span>
+                    <span class="tag">n8n</span>
+                    <span class="tag">Zapier</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">Webhooks</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Pour un distributeur FMCG à Yopougon, nous avons relié les commandes WhatsApp à Sage via Make.com : chaque bon de commande génère la facture et met à jour le stock automatiquement. <strong>Résultat : 90 heures de saisie économisées par mois</strong> et plus aucune double-saisie." data-en="For an FMCG distributor in Yopougon, we linked WhatsApp orders to Sage via Make.com: every purchase order generates the invoice and updates stock automatically. <strong>Result: 90 hours of data entry saved per month</strong> and zero double entry.">Pour un distributeur FMCG à Yopougon, nous avons relié les commandes WhatsApp à Sage via Make.com : chaque bon de commande génère la facture et met à jour le stock automatiquement. <strong>Résultat : 90 heures de saisie économisées par mois</strong> et plus aucune double-saisie.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="svc-item" id="svc-2">
+            <div class="svc-row header-row">
+              <span class="no">02</span>
+              <h3 data-fr="Agents IA et Assistants" data-en="AI Agents and Assistants">Agents IA et Assistants</h3>
+              <p data-fr="Chatbots intelligents et agents autonomes branchés sur vos données." data-en="Smart chatbots and autonomous agents connected to your data.">Chatbots intelligents et agents autonomes branchés sur vos données.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Déploiement d'assistants IA multilingues sur WhatsApp, Web ou Slack." data-en="Deployment of multilingual AI assistants on WhatsApp, Web, or Slack.">Déploiement d'assistants IA multilingues sur WhatsApp, Web ou Slack.</li>
+                    <li data-fr="Système RAG pour interroger vos documents d'entreprise en langage naturel." data-en="RAG systems to query company documents in natural language.">Système RAG pour interroger vos documents d'entreprise en langage naturel.</li>
+                    <li data-fr="Qualification automatique des prospects 24/7." data-en="24/7 automated lead qualification.">Qualification automatique des prospects 24/7.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">OpenAI GPT-4</span>
+                    <span class="tag">Claude 3.5</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">Flowise</span>
+                    <span class="tag">Vector DBs</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Une agence immobilière de Cocody a déployé notre assistant WhatsApp branché sur son catalogue (RAG) : il répond 24/7 sur les prix et les disponibilités. <strong>85 % des demandes traitées sans intervention humaine</strong>, libérant les agents pour les visites." data-en="A real-estate agency in Cocody deployed our WhatsApp assistant plugged into its catalog (RAG): it answers 24/7 on prices and availability. <strong>85% of inquiries handled with no human intervention</strong>, freeing agents for viewings.">Une agence immobilière de Cocody a déployé notre assistant WhatsApp branché sur son catalogue (RAG) : il répond 24/7 sur les prix et les disponibilités. <strong>85 % des demandes traitées sans intervention humaine</strong>, libérant les agents pour les visites.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="svc-item" id="svc-3">
+            <div class="svc-row header-row">
+              <span class="no">03</span>
+              <h3 data-fr="Intégration CRM et Ventes" data-en="CRM and Sales Integration">Intégration CRM et Ventes</h3>
+              <p data-fr="Centralisation des ventes et automatisation des pipelines commerciaux." data-en="Centralizing sales and automating commercial pipelines.">Centralisation des ventes et automatisation des pipelines commerciaux.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Configuration de CRM modernes (HubSpot, GoHighLevel, Pipedrive)." data-en="Setup of modern CRMs (HubSpot, GoHighLevel, Pipedrive).">Configuration de CRM modernes (HubSpot, GoHighLevel, Pipedrive).</li>
+                    <li data-fr="Tunnels de vente automatisés de la capture à la facturation." data-en="Automated sales funnels from capture to invoicing.">Tunnels de vente automatisés de la capture à la facturation.</li>
+                    <li data-fr="Systèmes d'alertes instantanées pour les équipes commerciales." data-en="Instant alert systems for sales teams.">Systèmes d'alertes instantanées pour les équipes commerciales.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">GoHighLevel</span>
+                    <span class="tag">HubSpot</span>
+                    <span class="tag">Airtable</span>
+                    <span class="tag">Zapier</span>
+                    <span class="tag">Twilio / SMS</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Pour une PME de services, nous avons centralisé les leads Facebook, WhatsApp et site web dans GoHighLevel, avec relances SMS automatiques et scoring. <strong>+27 % de taux de conversion en trois mois</strong>, sans embaucher un seul commercial." data-en="For a services SME, we centralized Facebook, WhatsApp and website leads into GoHighLevel, with automated SMS follow-ups and scoring. <strong>+27% conversion rate in three months</strong>, without hiring a single salesperson.">Pour une PME de services, nous avons centralisé les leads Facebook, WhatsApp et site web dans GoHighLevel, avec relances SMS automatiques et scoring. <strong>+27 % de taux de conversion en trois mois</strong>, sans embaucher un seul commercial.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="svc-item" id="svc-4">
+            <div class="svc-row header-row">
+              <span class="no">04</span>
+              <h3 data-fr="Ingénierie de Données" data-en="Data Engineering">Ingénierie de Données</h3>
+              <p data-fr="Modélisation de données, pipelines ETL et tableaux de bord décisionnels." data-en="Data modeling, ETL pipelines, and decision dashboards.">Modélisation de données, pipelines ETL et tableaux de bord décisionnels.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Création de bases de données fiables et centralisées pour vos rapports." data-en="Creation of reliable, centralized databases for reports.">Création de bases de données fiables et centralisées pour vos rapports.</li>
+                    <li data-fr="Pipelines de données automatisés (ETL) à partir de sources disparates." data-en="Automated data pipelines (ETL) from disparate sources.">Pipelines de données automatisés (ETL) à partir de sources disparates.</li>
+                    <li data-fr="Tableaux de bord dynamiques (PowerBI, Looker Studio, Glide) interactifs." data-en="Interactive dynamic dashboards (PowerBI, Looker Studio, Glide).">Tableaux de bord dynamiques (PowerBI, Looker Studio, Glide) interactifs.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">Python / Pandas</span>
+                    <span class="tag">Looker Studio</span>
+                    <span class="tag">Glide</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Une chaîne de distribution suivait ses ventes dans 12 fichiers Excel séparés. Nous avons construit un pipeline vers Supabase et un tableau de bord Looker Studio en temps réel. <strong>La direction suit sa marge chaque matin</strong>, au lieu d'attendre le bilan de fin de mois." data-en="A retail chain tracked its sales across 12 separate Excel files. We built a pipeline to Supabase and a real-time Looker Studio dashboard. <strong>Management now tracks margin every morning</strong>, instead of waiting for the month-end report.">Une chaîne de distribution suivait ses ventes dans 12 fichiers Excel séparés. Nous avons construit un pipeline vers Supabase et un tableau de bord Looker Studio en temps réel. <strong>La direction suit sa marge chaque matin</strong>, au lieu d'attendre le bilan de fin de mois.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="svc-item" id="svc-5">
+            <div class="svc-row header-row">
+              <span class="no">05</span>
+              <h3 data-fr="Applications et Portails" data-en="Applications and Portals">Applications et Portails</h3>
+              <p data-fr="Développement de plateformes web custom et portails clients connectés." data-en="Development of custom web platforms and connected client portals.">Développement de plateformes web custom et portails clients connectés.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Création de portails clients sécurisés et d'outils internes pour vos collaborateurs." data-en="Creation of secure client portals and internal tools for employees.">Création de portails clients sécurisés et d'outils internes pour vos collaborateurs.</li>
+                    <li data-fr="Développement d'applications Web performantes connectées à vos automatisations." data-en="Development of high-performance Web apps hooked to your automations.">Développement d'applications Web performantes connectées à vos automatisations.</li>
+                    <li data-fr="Déploiement d'architectures SaaS légères et évolutives." data-en="Deployment of lightweight, scalable SaaS architectures.">Déploiement d'architectures SaaS légères et évolutives.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">React / Next.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">Tailwind</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Pour un cabinet comptable, nous avons créé un portail client sécurisé où chaque entreprise dépose ses pièces et suit ses déclarations. <strong>200 clients gérés sans embaucher</strong>, avec un historique complet et fini les e-mails perdus." data-en="For an accounting firm, we built a secure client portal where each company uploads its documents and tracks its filings. <strong>200 clients managed without new hires</strong>, with a full history and no more lost emails.">Pour un cabinet comptable, nous avons créé un portail client sécurisé où chaque entreprise dépose ses pièces et suit ses déclarations. <strong>200 clients gérés sans embaucher</strong>, avec un historique complet et fini les e-mails perdus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="svc-item" id="svc-6">
+            <div class="svc-row header-row">
+              <span class="no">06</span>
+              <h3 data-fr="Formation et Conseil" data-en="Training and Advisory">Formation et Conseil</h3>
+              <p data-fr="Accompagnement, cadrage technique et montée en compétences de vos équipes." data-en="Mentoring, technical framing, and skill development of your teams.">Accompagnement, cadrage technique et montée en compétences de vos équipes.</p>
+              <span class="plus">+</span>
+            </div>
+            <div class="svc-details">
+              <div class="svc-details-grid">
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Ce que nous faisons :" data-en="What we do:">Ce que nous faisons :</h4>
+                  <ul>
+                    <li data-fr="Audit de vos processus métier actuels et détection des goulots d'étranglement." data-en="Audit of current business processes and bottleneck identification.">Audit de vos processus métier actuels et détection des goulots d'étranglement.</li>
+                    <li data-fr="Rédaction de feuilles de route techniques claires et chiffrées." data-en="Drafting clear, budgeted technical roadmaps.">Rédaction de feuilles de route techniques claires et chiffrées.</li>
+                    <li data-fr="Formations pratiques sur les outils No-Code (Make, n8n) et l'usage de l'IA." data-en="Practical training on No-Code tools (Make, n8n) and AI utilization.">Formations pratiques sur les outils No-Code (Make, n8n) et l'usage de l'IA.</li>
+                  </ul>
+                </div>
+                <div class="svc-col">
+                  <h4 class="mono" data-fr="Technologies clés :" data-en="Key Technologies:">Technologies clés :</h4>
+                  <div class="tags">
+                    <span class="tag">Audit Process</span>
+                    <span class="tag">Formations</span>
+                    <span class="tag">Make Partner</span>
+                    <span class="tag">AI Prompting</span>
+                    <span class="tag">Roadmap</span>
+                  </div>
+                  <a href="contact.html" class="btn btn-sm" data-fr="Discuter de ce besoin" data-en="Discuss this need">Discuter de ce besoin</a>
+                </div>
+                <div class="svc-example">
+                  <span class="ex-label mono" data-fr="Exemple concret" data-en="Concrete example">Exemple concret</span>
+                  <p data-fr="Après un audit d'une semaine chez un importateur, nous avons formé son équipe à Make.com et à l'usage de l'IA. <strong>Trois mois plus tard, elle crée elle-même ses propres automatisations</strong>, sans dépendre d'un prestataire externe." data-en="After a one-week audit at an importer, we trained its team on Make.com and on using AI. <strong>Three months later, they build their own automations in-house</strong>, without depending on an external vendor.">Après un audit d'une semaine chez un importateur, nous avons formé son équipe à Make.com et à l'usage de l'IA. <strong>Trois mois plus tard, elle crée elle-même ses propres automatisations</strong>, sans dépendre d'un prestataire externe.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CALL TO ACTION -->
+    <section class="cta" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="card-brutal accent-bg" style="text-align: center; padding: 60px;">
+          <h2 style="font-size: 2rem; margin-bottom: 14px;" data-fr="Vous avez un goulot d'étranglement particulier ?" data-en="Have a specific bottleneck to solve?">Vous avez un goulot d'étranglement particulier ?</h2>
+          <p class="muted" style="margin-bottom: 24px;" data-fr="Discutez-en avec nos ingénieurs et recevez des propositions d'architecture adaptées à vos outils actuels." data-en="Discuss it with our engineers and receive architecture proposals tailored to your current tools.">Discutez-en avec nos ingénieurs et recevez des propositions d'architecture adaptées à vos outils actuels.</p>
+          <a href="contact.html" class="btn" data-fr="Expliquez-nous votre problème &rarr;" data-en="Explain your problem &rarr;">Expliquez-nous votre problème &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p data-fr="Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique." data-en="Digital innovation startup studio. Accelerating the digital transformation of African enterprises through AI, data and economic intelligence.">Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique.</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Réseaux" data-en="Social">Réseaux</h4>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Abidjan, Cocody Mermoz</span>
+          <span>Côte d'Ivoire</span>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></span>
+        <span class="mono">DESIGN SYSTEM CONCEPT C (V2.0)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fr="Réalisations et Études de cas — HK Studio" data-en="Selected Work and Case Studies — HK Studio">Réalisations et Études de cas — HK Studio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Local Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+      <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+      <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+      <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <div class="lang-drawer">
+        <button data-lang="fr" class="on">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+      <a href="contact.html" class="btn" style="width: 100%; text-align: center;" data-fr="Démarrer un Projet" data-en="Start a Project">Démarrer un Projet</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- PORTFOLIO DETAILS SIDE SHEET (SLIDE OUT DRAWER) -->
+  <div class="portfolio-sheet" id="portfolioSheet">
+    <button class="close-sheet" id="closeSheet" aria-label="Fermer les détails">&times;</button>
+    <div class="sheet-content" id="sheetContent">
+      <!-- Dynamically filled by JavaScript -->
+    </div>
+  </div>
+  <div class="sheet-overlay" id="sheetOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+          <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+          <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <div class="lang">
+            <button data-lang="fr" class="on">FR</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+          <a href="contact.html" class="btn" data-fr="Projet" data-en="Project">Projet</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent" data-fr="04 — Études de cas" data-en="04 — Case studies">04 — Études de cas</p>
+        <h1 data-fr="Nos Réalisations" data-en="Our Selected Work">Nos Réalisations</h1>
+        <p class="muted" style="max-width: 60ch; font-size: 1.1rem; font-weight: 300;" data-fr="Explorez des cas concrets de goulots d'étranglement résolus et les résultats chiffrés obtenus pour nos clients partenaires." data-en="Explore concrete cases of solved bottlenecks and the figures achieved for our client partners.">Explorez des cas concrets de goulots d'étranglement résolus et les résultats chiffrés obtenus pour nos clients partenaires.</p>
+      </div>
+    </section>
+
+    <!-- CARDS GRID -->
+    <section class="pad" style="padding-top: 60px;">
+      <div class="wrap">
+        <div class="work-grid" style="border-top:1px solid var(--hair); margin-top:0">
+          <!-- Project 1 -->
+          <div class="w-card" data-project="p1">
+            <div class="thumb">
+              <span class="no">01</span>
+              <span class="tag mono">FinTech et Crédit</span>
+            </div>
+            <div class="body">
+              <h3 data-fr="IA pour la Microfinance" data-en="AI for Microfinance">IA pour la Microfinance</h3>
+              <p data-fr="Scoring crédit automatisé et détection de fraude en temps réel." data-en="Automated credit scoring and real-time fraud detection.">Scoring crédit automatisé et détection de fraude en temps réel.</p>
+              <span class="btn-link mono" data-fr="Voir l'étude de cas &rarr;" data-en="View case study &rarr;">Voir l'étude de cas &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="w-card" data-project="p2">
+            <div class="thumb">
+              <span class="no">02</span>
+              <span class="tag mono">Opérations et CRM</span>
+            </div>
+            <div class="body">
+              <h3 data-fr="Automatisation de Facturation" data-en="Billing Automation">Automatisation de Facturation</h3>
+              <p data-fr="Génération automatique de devis et synchronisation comptable SAGE." data-en="Automated quote generation and SAGE accounting synchronization.">Génération automatique de devis et synchronisation comptable SAGE.</p>
+              <span class="btn-link mono" data-fr="Voir l'étude de cas &rarr;" data-en="View case study &rarr;">Voir l'étude de cas &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="w-card" data-project="p3">
+            <div class="thumb">
+              <span class="no">03</span>
+              <span class="tag mono">GenAI et Support</span>
+            </div>
+            <div class="body">
+              <h3 data-fr="Assistant WhatsApp Client" data-en="WhatsApp Client Assistant">Assistant WhatsApp Client</h3>
+              <p data-fr="Support client automatisé 24/7 connecté aux stocks physiques." data-en="24/7 automated customer support linked to physical inventory.">Support client automatisé 24/7 connecté aux stocks physiques.</p>
+              <span class="btn-link mono" data-fr="Voir l'étude de cas &rarr;" data-en="View case study &rarr;">Voir l'étude de cas &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p data-fr="Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique." data-en="Digital innovation startup studio. Accelerating the digital transformation of African enterprises through AI, data and economic intelligence.">Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique.</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Réseaux" data-en="Social">Réseaux</h4>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Abidjan, Cocody Mermoz</span>
+          <span>Côte d'Ivoire</span>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></span>
+        <span class="mono">DESIGN SYSTEM CONCEPT C (V2.0)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

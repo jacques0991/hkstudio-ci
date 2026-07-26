@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fr="Calculateur de ROI — HK Studio" data-en="ROI Calculator — HK Studio">Calculateur de ROI — HK Studio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Local Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+      <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+      <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+      <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <div class="lang-drawer">
+        <button data-lang="fr" class="on">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+      <a href="contact.html" class="btn" style="width: 100%; text-align: center;" data-fr="Démarrer un Projet" data-en="Start a Project">Démarrer un Projet</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+          <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+          <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <div class="lang">
+            <button data-lang="fr" class="on">FR</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+          <a href="contact.html" class="btn" data-fr="Projet" data-en="Project">Projet</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent" data-fr="02 — Calculateur de rentabilité" data-en="02 — Profitability Calculator">02 — Calculateur de rentabilité</p>
+        <h1 data-fr="Estimez votre ROI" data-en="Estimate your ROI">Estimez votre ROI</h1>
+        <p class="muted" style="max-width: 60ch; font-size: 1.1rem; font-weight: 300;" data-fr="Déterminez précisément le retour sur investissement financier et temporel de l'automatisation de vos tâches répétitives." data-en="Precisely determine the financial and time return on investment from automating your repetitive tasks.">Déterminez précisément le retour sur investissement financier et temporel de l'automatisation de vos tâches répétitives.</p>
+      </div>
+    </section>
+
+    <!-- CALCULATOR INTERFACE -->
+    <section class="pad" style="padding-top: 60px;">
+      <div class="wrap">
+        <div class="roi-grid">
+          <!-- Sliders and Inputs -->
+          <div class="roi-inputs card-brutal">
+            <h3 data-fr="Ajustez vos paramètres" data-en="Adjust your parameters">Ajustez vos paramètres</h3>
+            <p class="muted" style="margin-bottom: 24px;" data-fr="Indiquez le nombre de collaborateurs effectuant des tâches de saisie manuelle et les heures hebdomadaires moyennes perdues par personne." data-en="Indicate the number of employees performing manual data entry and the average weekly hours wasted per person.">Indiquez le nombre de collaborateurs effectuant des tâches de saisie manuelle et les heures hebdomadaires moyennes perdues par personne.</p>
+            
+            <div class="control-group">
+              <div class="control-label">
+                <span data-fr="Nombre de collaborateurs :" data-en="Number of employees:">Nombre de collaborateurs :</span>
+                <span class="badge mono" id="valEmployees">5</span>
+              </div>
+              <input type="range" id="inputEmployees" min="1" max="150" value="5" class="slider-brutal">
+              <div class="slider-limits mono"><span>1</span><span>150</span></div>
+            </div>
+            
+            <div class="control-group">
+              <div class="control-label">
+                <span data-fr="Heures perdues / collaborateur / semaine :" data-en="Hours wasted / employee / week:">Heures perdues / collaborateur / semaine :</span>
+                <span class="badge mono" id="valHours">6 h</span>
+              </div>
+              <input type="range" id="inputHours" min="1" max="40" value="6" class="slider-brutal">
+              <div class="slider-limits mono"><span>1h</span><span>40h</span></div>
+            </div>
+            
+            <div class="control-group">
+              <div class="control-label">
+                <span data-fr="Taux horaire moyen estimé (FCFA / EUR) :" data-en="Estimated average hourly rate (FCFA / EUR):">Taux horaire moyen estimé (FCFA / EUR) :</span>
+                <span class="badge mono" id="valRate">5,000 FCFA</span>
+              </div>
+              <input type="range" id="inputRate" min="1000" max="30000" step="500" value="5000" class="slider-brutal">
+              <div class="slider-limits mono"><span>1,000 F</span><span>30,000 F</span></div>
+            </div>
+
+            <!-- Currency Toggle -->
+            <div class="currency-toggle">
+              <span class="mono" style="font-size: 0.8rem;" data-fr="Devise d'affichage :" data-en="Display Currency:">Devise d'affichage :</span>
+              <div class="lang">
+                <button id="btnXOF" class="on">FCFA (XOF)</button>
+                <button id="btnEUR">EUR (€)</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Results Presentation -->
+          <div class="roi-results card-brutal accent-bg">
+            <h3 data-fr="Vos Économies Mensuelles" data-en="Your Monthly Savings">Vos Économies Mensuelles</h3>
+            
+            <div class="result-box">
+              <span class="mono label" data-fr="Temps récupéré par mois" data-en="Time recovered per month">Temps récupéré par mois</span>
+              <div class="value-huge mono" id="resHours">120 <span class="unit" data-fr="Heures" data-en="Hours">Heures</span></div>
+            </div>
+            
+            <div class="result-divider"></div>
+            
+            <div class="result-box">
+              <span class="mono label" data-fr="Économie financière mensuelle" data-en="Monthly financial savings">Économie financière mensuelle</span>
+              <div class="value-huge mono text-accent" id="resMonthly">600,000 <span class="unit">FCFA</span></div>
+            </div>
+            
+            <div class="result-box" style="margin-top: 10px;">
+              <span class="mono label" data-fr="Soit une économie annuelle de" data-en="Or an annual savings of">Soit une économie annuelle de</span>
+              <div class="value-large mono" id="resYearly">7,200,000 <span class="unit">FCFA</span></div>
+            </div>
+            
+            <div class="gauge-container">
+              <div class="progress-bar-brutal">
+                <div class="progress-fill" id="progressFill" style="width: 24%"></div>
+              </div>
+              <div class="progress-label mono" id="resPercentage" data-fr="Gain de productivité : +15%" data-en="Productivity gain: +15%">Gain de productivité : +15%</div>
+            </div>
+
+            <a href="contact.html" class="btn" style="width:100%; text-align:center; margin-top:20px; background: var(--ink); color: var(--paper);" data-fr="Sécuriser ces économies &rarr;" data-en="Secure these savings &rarr;">Sécuriser ces économies &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p data-fr="Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique." data-en="Digital innovation startup studio. Accelerating the digital transformation of African enterprises through AI, data and economic intelligence.">Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique.</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Réseaux" data-en="Social">Réseaux</h4>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Abidjan, Cocody Mermoz</span>
+          <span>Côte d'Ivoire</span>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></span>
+        <span class="mono">DESIGN SYSTEM CONCEPT C (V2.0)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

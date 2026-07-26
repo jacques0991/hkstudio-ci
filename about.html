@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fr="À propos de HK Studio" data-en="About HK Studio">À propos de HK Studio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Local Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+      <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+      <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+      <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <div class="lang-drawer">
+        <button data-lang="fr" class="on">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+      <a href="contact.html" class="btn" style="width: 100%; text-align: center;" data-fr="Démarrer un Projet" data-en="Start a Project">Démarrer un Projet</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+          <a href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
+          <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <div class="lang">
+            <button data-lang="fr" class="on">FR</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+          <a href="contact.html" class="btn" data-fr="Projet" data-en="Project">Projet</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent" data-fr="03 — Notre histoire et vision" data-en="03 — Our story and vision">03 — Notre histoire et vision</p>
+        <h1 data-fr="À propos de HK Studio" data-en="About HK Studio">À propos de HK Studio</h1>
+        <p class="muted" style="max-width: 62ch; font-size: 1.15rem; font-weight: 300;" data-fr="HK Studio est un startup studio d'innovation digitale basé à Abidjan. Nous concevons, lançons et faisons grandir des solutions d'intelligence artificielle, de data et d'intelligence économique pour les entreprises africaines." data-en="HK Studio is a digital-innovation startup studio based in Abidjan. We design, launch and scale artificial intelligence, data and economic-intelligence solutions for African enterprises.">HK Studio est un startup studio d'innovation digitale basé à Abidjan. Nous concevons, lançons et faisons grandir des solutions d'intelligence artificielle, de data et d'intelligence économique pour les entreprises africaines.</p>
+      </div>
+    </section>
+
+    <!-- QUI SOMMES-NOUS -->
+    <section class="pad" style="padding-bottom: 60px;">
+      <div class="wrap">
+        <div class="about-lead">
+          <div class="lead-head">
+            <span class="mono accent" data-fr="Qui sommes-nous" data-en="Who we are">Qui sommes-nous</span>
+            <h2 data-fr="Un studio d'innovation digitale, au cœur d'Abidjan." data-en="A digital-innovation studio, at the heart of Abidjan.">Un studio d'innovation digitale, au cœur d'Abidjan.</h2>
+          </div>
+          <div class="lead-body">
+            <p data-fr="HK Studio accompagne les entreprises et les porteurs de projets d'Afrique de l'Ouest dans leur transformation numérique. Nous combinons <strong>intelligence artificielle</strong>, <strong>ingénierie de la donnée</strong> et <strong>intelligence économique</strong> pour transformer des idées en produits concrets et rentables." data-en="HK Studio supports West-African companies and founders through their digital transformation. We combine <strong>artificial intelligence</strong>, <strong>data engineering</strong> and <strong>economic intelligence</strong> to turn ideas into concrete, profitable products.">HK Studio accompagne les entreprises et les porteurs de projets d'Afrique de l'Ouest dans leur transformation numérique. Nous combinons <strong>intelligence artificielle</strong>, <strong>ingénierie de la donnée</strong> et <strong>intelligence économique</strong> pour transformer des idées en produits concrets et rentables.</p>
+            <p data-fr="Notre conviction est simple : l'Afrique ne doit pas seulement <em>consommer</em> les technologies qui transforment le monde — elle doit les <em>concevoir</em>. C'est pourquoi nous fonctionnons comme un studio : nous nous engageons dans la durée, de la première idée jusqu'à la mise sur le marché." data-en="Our belief is simple: Africa should not merely <em>consume</em> the technologies transforming the world — it should <em>build</em> them. That is why we operate as a studio: we commit for the long run, from the first idea to market launch.">Notre conviction est simple : l'Afrique ne doit pas seulement <em>consommer</em> les technologies qui transforment le monde — elle doit les <em>concevoir</em>. C'est pourquoi nous fonctionnons comme un studio : nous nous engageons dans la durée, de la première idée jusqu'à la mise sur le marché.</p>
+            <p data-fr="De la stratégie au développement web, de l'automatisation des processus au déploiement de modèles d'IA, nous mettons la technologie au service d'un seul objectif : un résultat mesurable." data-en="From strategy to web development, from process automation to AI-model deployment, we put technology to work toward a single goal: measurable results.">De la stratégie au développement web, de l'automatisation des processus au déploiement de modèles d'IA, nous mettons la technologie au service d'un seul objectif : un résultat mesurable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="pad bg-light">
+      <div class="wrap">
+        <div class="sec-label">
+          <h2 data-fr="Mission et Vision" data-en="Mission and Vision">Mission et Vision</h2>
+          <span class="idx">01</span>
+        </div>
+        <div class="mv-grid">
+          <div class="card-brutal">
+            <span class="mono accent" data-fr="Notre mission" data-en="Our mission">Notre mission</span>
+            <p class="mv-statement" data-fr="Accélérer la transformation numérique des entreprises africaines grâce à l'intelligence artificielle, la data et l'intelligence économique." data-en="Accelerate the digital transformation of African enterprises through artificial intelligence, data and economic intelligence.">Accélérer la transformation numérique des entreprises africaines grâce à l'intelligence artificielle, la data et l'intelligence économique.</p>
+          </div>
+          <div class="card-brutal accent-bg">
+            <span class="mono accent" data-fr="Notre vision" data-en="Our vision">Notre vision</span>
+            <p class="mv-statement" data-fr="Faire d'Abidjan et de l'Afrique de l'Ouest un pôle qui conçoit sa propre intelligence artificielle — utile, accessible et créatrice de valeur." data-en="Make Abidjan and West Africa a hub that builds its own artificial intelligence — useful, accessible and value-creating.">Faire d'Abidjan et de l'Afrique de l'Ouest un pôle qui conçoit sa propre intelligence artificielle — utile, accessible et créatrice de valeur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS PILIERS -->
+    <section class="pad">
+      <div class="wrap">
+        <div class="sec-label">
+          <h2 data-fr="Nos piliers" data-en="Our pillars">Nos piliers</h2>
+          <span class="idx">02</span>
+        </div>
+        <div class="pillars">
+          <div class="card-brutal">
+            <span class="p-ic">◆</span>
+            <h3 data-fr="Lean Startup" data-en="Lean Startup">Lean Startup</h3>
+            <p data-fr="Nous concevons, testons et lançons vite. La méthode Lean Startup nous permet de valider chaque idée par le marché, de réduire les risques et de livrer de la valeur plus tôt." data-en="We design, test and launch fast. The Lean Startup method lets us validate every idea against the market, reduce risk and deliver value sooner.">Nous concevons, testons et lançons vite. La méthode Lean Startup nous permet de valider chaque idée par le marché, de réduire les risques et de livrer de la valeur plus tôt.</p>
+          </div>
+          <div class="card-brutal">
+            <span class="p-ic">❖</span>
+            <h3 data-fr="Intelligence Économique" data-en="Economic Intelligence">Intelligence Économique</h3>
+            <p data-fr="Nous transformons l'information en avantage. Veille concurrentielle, analyse de marché et signaux stratégiques pour décider avec un temps d'avance." data-en="We turn information into advantage. Competitive watch, market analysis and strategic signals to decide one step ahead.">Nous transformons l'information en avantage. Veille concurrentielle, analyse de marché et signaux stratégiques pour décider avec un temps d'avance.</p>
+          </div>
+          <div class="card-brutal">
+            <span class="p-ic">✦</span>
+            <h3 data-fr="IA et Automatisation" data-en="AI and Automation">IA et Automatisation</h3>
+            <p data-fr="Nous mettons l'IA au travail. Agents, modèles sur mesure et automatisations qui libèrent vos équipes des tâches répétitives et fiabilisent vos opérations." data-en="We put AI to work. Agents, custom models and automations that free your teams from repetitive tasks and make your operations reliable.">Nous mettons l'IA au travail. Agents, modèles sur mesure et automatisations qui libèrent vos équipes des tâches répétitives et fiabilisent vos opérations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS PRINCIPES -->
+    <section class="pad bg-light">
+      <div class="wrap">
+        <div class="sec-label">
+          <h2 data-fr="Nos principes directeurs" data-en="Our guiding principles">Nos principes directeurs</h2>
+          <span class="idx">03</span>
+        </div>
+        <div class="steps">
+          <div class="step" style="padding-top: 0;">
+            <div class="n">01</div>
+            <h3 data-fr="Obsession du ROI" data-en="ROI Obsession">Obsession du ROI</h3>
+            <p data-fr="Chaque projet doit créer une valeur mesurable : un temps gagné, un revenu en hausse ou une erreur coûteuse éliminée." data-en="Every project must create measurable value: time saved, revenue up, or a costly error removed.">Chaque projet doit créer une valeur mesurable : un temps gagné, un revenu en hausse ou une erreur coûteuse éliminée.</p>
+            <div class="step-example">
+              <span class="ex-label mono" data-fr="En pratique" data-en="In practice">En pratique</span>
+              <p data-fr="Avant tout devis, nous chiffrons ensemble l'impact attendu et fixons un objectif clair. <strong>Si le projet ne se rembourse pas rapidement, nous vous le disons</strong> — c'est écrit dans notre proposition." data-en="Before any quote, we quantify the expected impact together and set a clear target. <strong>If the project won't pay for itself quickly, we tell you</strong> — in writing, in our proposal.">Avant tout devis, nous chiffrons ensemble l'impact attendu et fixons un objectif clair. <strong>Si le projet ne se rembourse pas rapidement, nous vous le disons</strong> — c'est écrit dans notre proposition.</p>
+            </div>
+          </div>
+          <div class="step" style="padding-top: 0;">
+            <div class="n">02</div>
+            <h3 data-fr="Zéro Dépendance" data-en="Zero Lock-In">Zéro Dépendance</h3>
+            <p data-fr="Ce que nous construisons vous appartient. Nous formons vos équipes pour que vous gardiez la main sur vos outils et vos données." data-en="What we build belongs to you. We train your teams so you stay in control of your tools and your data.">Ce que nous construisons vous appartient. Nous formons vos équipes pour que vous gardiez la main sur vos outils et vos données.</p>
+            <div class="step-example">
+              <span class="ex-label mono" data-fr="En pratique" data-en="In practice">En pratique</span>
+              <p data-fr="À la livraison, nous vous remettons les accès complets, une documentation claire et une prise en main. <strong>Tout tourne sur VOS comptes, jamais les nôtres</strong> — vous restez libre." data-en="At handover, we give you full access, clear documentation and onboarding. <strong>Everything runs on YOUR accounts, never ours</strong> — you stay free.">À la livraison, nous vous remettons les accès complets, une documentation claire et une prise en main. <strong>Tout tourne sur VOS comptes, jamais les nôtres</strong> — vous restez libre.</p>
+            </div>
+          </div>
+          <div class="step" style="padding-top: 0;">
+            <div class="n">03</div>
+            <h3 data-fr="Ancrage Local" data-en="Local Roots">Ancrage Local</h3>
+            <p data-fr="Basés à Abidjan, nous connaissons vos marchés, vos langues et vos réalités. Nous construisons pour le contexte africain." data-en="Based in Abidjan, we know your markets, languages and realities. We build for the African context.">Basés à Abidjan, nous connaissons vos marchés, vos langues et vos réalités. Nous construisons pour le contexte africain.</p>
+            <div class="step-example">
+              <span class="ex-label mono" data-fr="En pratique" data-en="In practice">En pratique</span>
+              <p data-fr="Nous intervenons dans vos bureaux pour l'audit et la formation. Un canal dédié vous relie à votre référent, <strong>avec une première réponse sous 2 heures ouvrées</strong>." data-en="We come to your offices for audits and training. A dedicated channel connects you to your lead, <strong>with a first reply within 2 business hours</strong>.">Nous intervenons dans vos bureaux pour l'audit et la formation. Un canal dédié vous relie à votre référent, <strong>avec une première réponse sous 2 heures ouvrées</strong>.</p>
+            </div>
+          </div>
+          <div class="step" style="padding-top: 0;">
+            <div class="n">04</div>
+            <h3 data-fr="Simplicité Exigeante" data-en="Demanding Simplicity">Simplicité Exigeante</h3>
+            <p data-fr="Nous privilégions des solutions directes et robustes, sans sur-ingénierie — moins de pannes, des coûts maîtrisés, une solution que votre équipe comprend." data-en="We favour direct, robust solutions without over-engineering — fewer failures, controlled costs, a solution your team understands.">Nous privilégions des solutions directes et robustes, sans sur-ingénierie — moins de pannes, des coûts maîtrisés, une solution que votre équipe comprend.</p>
+            <div class="step-example">
+              <span class="ex-label mono" data-fr="En pratique" data-en="In practice">En pratique</span>
+              <p data-fr="Nous préférons une architecture claire à une usine à gaz. <strong>Moins de briques techniques, c'est plus de fiabilité</strong> et une maintenance sereine dans la durée." data-en="We prefer a clean architecture over a fragile machine. <strong>Fewer moving parts means more reliability</strong> and calmer maintenance over time.">Nous préférons une architecture claire à une usine à gaz. <strong>Moins de briques techniques, c'est plus de fiabilité</strong> et une maintenance sereine dans la durée.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EN CHIFFRES -->
+    <section class="pad">
+      <div class="wrap">
+        <div class="sec-label">
+          <h2 data-fr="HK Studio en chiffres" data-en="HK Studio by the numbers">HK Studio en chiffres</h2>
+          <span class="idx">04</span>
+        </div>
+        <div class="facts">
+          <div class="f"><b>2019</b><span class="mono" data-fr="Fondé à Abidjan" data-en="Founded in Abidjan">Fondé à Abidjan</span></div>
+          <div class="f"><b>45+</b><span class="mono" data-fr="Projets livrés" data-en="Projects delivered">Projets livrés</span></div>
+          <div class="f"><b>30M+</b><span class="mono" data-fr="FCFA de valeur créée" data-en="FCFA of value created">FCFA de valeur créée</span></div>
+          <div class="f"><b>3</b><span class="mono" data-fr="Domaines : IA · Data · Intel. éco." data-en="Fields: AI · Data · Econ. intel.">Domaines : IA · Data · Intel. éco.</span></div>
+        </div>
+        <p class="mono" style="color: var(--ink-2); margin-top: 18px; font-size: 0.7rem;" data-fr="* Chiffres indicatifs — à remplacer par vos données réelles." data-en="* Indicative figures — to replace with your real data.">* Chiffres indicatifs — à remplacer par vos données réelles.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="card-brutal accent-bg" style="text-align: center; padding: 60px;">
+          <h2 style="font-size: 2rem; margin-bottom: 14px;" data-fr="Construisons l'avenir numérique de votre entreprise." data-en="Let's build your company's digital future.">Construisons l'avenir numérique de votre entreprise.</h2>
+          <p class="muted" style="margin-bottom: 24px;" data-fr="Parlez-nous de votre projet — nous vous répondons sous 24 heures." data-en="Tell us about your project — we reply within 24 hours.">Parlez-nous de votre projet — nous vous répondons sous 24 heures.</p>
+          <a href="contact.html" class="btn" data-fr="Démarrer un projet &rarr;" data-en="Start a project &rarr;">Démarrer un projet &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="index.html"><img class="logo-onblack" src="assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p data-fr="Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique." data-en="Digital innovation startup studio. Accelerating the digital transformation of African enterprises through AI, data and economic intelligence.">Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique.</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <a href="services.html" data-fr="Services" data-en="Services">Services</a>
+          <a href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
+          <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+          <a href="work.html" data-fr="Réalisations" data-en="Work">Réalisations</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Réseaux" data-en="Social">Réseaux</h4>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono" data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Abidjan, Cocody Mermoz</span>
+          <span>Côte d'Ivoire</span>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></span>
+        <span class="mono">DESIGN SYSTEM CONCEPT C (V2.0)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
