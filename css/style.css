@@ -189,7 +189,7 @@ nav {
   font-family: 'IBM Plex Mono', monospace;
   text-transform: uppercase;
   letter-spacing: .06em;
-  color: var(--ink-2);
+  color: var(--accent);
   transition: .25s;
 }
 
@@ -383,6 +383,15 @@ nav {
 
 .hero h1 .ac {
   color: var(--accent);
+}
+
+/* Rotating hero headline */
+.hero-rotator {
+  min-height: 3em;
+  transition: opacity 0.45s ease;
+}
+.hero-rotator.is-fading {
+  opacity: 0;
 }
 
 .hero .meta {
