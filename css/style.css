@@ -1730,3 +1730,20 @@ footer .logo {
 [data-theme="dark"] .w-card .thumb .tag {
   background: var(--paper);
 }
+
+/* ============ AJOUT COULEURS (brief) — superposition, structure inchangée ============ */
+:root,[data-theme="dark"]{--accent:#E8681C;--accent-light:rgba(232,104,28,.16)}
+:root{--navy:#0B2545;--blue:#1F4E79}
+.btn{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{background:#cf590f;border-color:#cf590f;color:#fff}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--accent)}
+.btn.ghost:hover{background:var(--accent);color:#fff}
+header,[data-theme="dark"] header{background:rgba(11,37,69,.92)!important;backdrop-filter:saturate(160%) blur(10px)}
+footer,[data-theme="dark"] footer{background:#0B2545!important}
+.subpage-hero{background:linear-gradient(135deg,#1F4E79,#0e2c52);color:#eaf1f8;border-bottom:none}
+.subpage-hero h1{color:#fff}
+.subpage-hero .muted,.subpage-hero p{color:#c9d8ea}
+.subpage-hero .tagline.accent,.subpage-hero .accent{color:#f2925a}
+.card-brutal{border-left:4px solid var(--blue)}
+.card-brutal.accent-bg{background:rgba(31,78,121,.16);border-color:var(--blue)}
+.svc-item.active .svc-row .no,.svc-item.active .svc-row h3{color:#4f8fd0}
