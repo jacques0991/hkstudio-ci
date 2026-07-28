@@ -321,8 +321,8 @@ document.addEventListener('DOMContentLoaded', () => {
         en: 'Daily manual entry of over 150 invoices and purchase orders into Sage accounting software, causing regular stock errors and delivery delays.'
       },
       solution: {
-        fr: 'Création de scénarios automatisés sur Make.com reliant les formulaires de commande terrain (formulaires WhatsApp/GHL) à l\'API Sage. Mise en place d\'un extracteur OCR intelligent (AI Vision) pour parser les PDFs reçus.',
-        en: 'Creation of automated scenarios on Make.com linking field order forms (WhatsApp/GHL forms) to the Sage API. Implementation of an intelligent OCR extractor (AI Vision) to parse received PDFs.'
+        fr: 'Création de scénarios automatisés sur Make.com reliant les formulaires de commande terrain (formulaires WhatsApp) à l\'API Sage. Mise en place d\'un extracteur OCR intelligent (AI Vision) pour parser les PDFs reçus.',
+        en: 'Creation of automated scenarios on Make.com linking field order forms (WhatsApp forms) to the Sage API. Implementation of an intelligent OCR extractor (AI Vision) to parse received PDFs.'
       },
       impact: {
         fr: 'Élimination totale des doubles saisies. Livraison accélérée de 24h. 90 heures de travail administratif récupérées chaque mois pour l\'équipe comptable.',
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         recommendedStack = 'OpenAI API, Claude, Flowise RAG';
         break;
       case 'crm':
-        recommendedStack = 'GoHighLevel CRM, Twilio, SMS workflows';
+        recommendedStack = 'All-in-one CRM, Twilio, SMS workflows';
         break;
       case 'data-web':
         recommendedStack = 'Supabase, PostgreSQL, Next.js, Looker Studio';
