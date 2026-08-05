@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+disallow: / admin.html
+stiemap: https://hkstudio-ci.com/sitemap.xml

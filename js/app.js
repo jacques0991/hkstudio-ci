@@ -65,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (translation !== null) {
         if (el.tagName === 'TITLE') {
           document.title = translation;
+        } else if (el.tagName === 'META') {
+          el.setAttribute('content', translation);
         } else {
           el.innerHTML = translation;
         }

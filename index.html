@@ -5,13 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title data-fr="HK Studio — Automatisation commerciale et digitalisation à Abidjan" data-en="HK Studio — Sales automation and digitalization in Abidjan">HK Studio — Automatisation commerciale et digitalisation à Abidjan</title>
-  <meta name="description" content="HK Studio installe des systèmes commerciaux et des automatisations qui captent vos prospects WhatsApp, relancent vos clients et pilotent vos ventes. Cabinet de croissance à Abidjan, Côte d'Ivoire." data-fr="HK Studio installe des systèmes commerciaux et des automatisations qui captent vos prospects WhatsApp, relancent vos clients et pilotent vos ventes. Cabinet de croissance à Abidjan, Côte d'Ivoire." data-en="HK Studio installs sales systems and automations that capture your WhatsApp leads, follow up with clients and drive your sales. Growth firm in Abidjan, Côte d'Ivoire.">
+  <title data-fr="Automatisation WhatsApp et CRM à Abidjan | HK Studio" data-en="WhatsApp & CRM Automation in Abidjan | HK Studio">Automatisation WhatsApp et CRM à Abidjan | HK Studio</title>
+  <meta name="description" content="Automatisez WhatsApp, vos relances et votre CRM avec HK Studio à Abidjan. Gagnez du temps, des prospects et des ventes. Diagnostic gratuit." data-fr="Automatisez WhatsApp,
+   vos relances et votre CRM avec HK Studio à Abidjan. Gagnez du temps, des prospects et des ventes. Diagnostic gratuit." data-en="Automate WhatsApp, follow-ups and your CRM with HK Studio in Abidjan. Gain time, leads and sales. Get your free diagnostic.">
   <meta name="keywords" content="automatisation PME, CRM, automatisation WhatsApp, digitalisation assurance, Abidjan, Côte d'Ivoire, HK Studio, diagnostic gratuit">
   <meta name="author" content="HK Studio">
-  <meta property="og:title" content="HK Studio — Automatisation commerciale et digitalisation à Abidjan">
-  <meta property="og:description" content="Transformez vos conversations WhatsApp en chiffre d'affaires. Diagnostic gratuit pour les PME et cabinets d'assurance d'Abidjan.">
+  <link rel="canonical" href="https://hkstudio-ci.com/">
+  <meta property="og:title" content="Automatisation WhatsApp et CRM à Abidjan | HK Studio">
+  <meta property="og:description" content="Automatisez WhatsApp, vos relances et votre CRM avec HK Studio à Abidjan. Diagnostic gratuit.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hkstudio-ci.com/">
+  <meta property="og:site_name" content="HK Studio">
+  <meta property="og:locale" content="fr_CI">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automatisation WhatsApp et CRM à Abidjan | HK Studio">
+  <meta name="twitter:description" content="Automatisez WhatsApp, vos relances et votre CRM avec HK Studio à Abidjan. Diagnostic gratuit.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "HK Studio",
+    "url": "https://hkstudio-ci.com/",
+    "email": "hello@hkstudio-ci.com",
+    "telephone": "+2250747558219",
+    "description": "Studio d'innovation digitale spécialisé en automatisation WhatsApp, CRM et digitalisation des entreprises.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bingerville",
+      "addressCountry": "CI"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Côte d'Ivoire"
+    }
+  }
+  </script>
 
   <!-- Fonts : Poppins (titres) + Inter (corps) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -893,7 +921,11 @@
       docEl.setAttribute('lang', l);
       document.querySelectorAll('[data-fr]').forEach(function(el){
         var val = el.getAttribute('data-'+l);
-        if(val !== null) el.innerHTML = val;
+        if(val !== null) {
+          if(el.tagName === 'META') el.setAttribute('content', val);
+          else if(el.tagName === 'TITLE') document.title = val;
+          else el.innerHTML = val;
+        }
       });
       document.querySelectorAll('[data-fr-placeholder]').forEach(function(el){
         var val = el.getAttribute('data-'+l+'-placeholder');
