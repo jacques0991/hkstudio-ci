@@ -1312,6 +1312,7 @@ nav {
   border-bottom: 1px solid var(--hair);
   padding-bottom: 24px;
   margin-bottom: 10px;
+
 }
 
 .form-section-group:last-of-type {
@@ -1319,7 +1320,6 @@ nav {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
 .form-title {
   display: block;
   font-size: 0.78rem;
@@ -1367,7 +1367,10 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-
+.input-row, #contactName,
+ #contactEmail, #contactCompany, #contactPhone {
+  color: #fff;
+}
 .config-form input, .config-form textarea {
   width: 100%;
   background: var(--paper);
@@ -1381,8 +1384,11 @@ nav {
 
 .config-form input:focus, .config-form textarea:focus {
   border-color: var(--accent);
-}
 
+}
+#contactMessage{
+  color: #fff;
+}
 /* Technical Live Code Preview (Right Pane) */
 .config-preview {
   background: #1e1e1e !important;
