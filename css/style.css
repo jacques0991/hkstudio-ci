@@ -1556,6 +1556,25 @@ footer .logo {
   }
 }
 
+/* adapter au tablette */
+@media (max-width: 1186px) {
+  .wrap {
+    padding: 0 22px;
+  }
+  
+  .nav-links, .nav-right .btn {
+    display: none;
+  }
+  
+  .burger {
+    display: flex;
+  }
+  
+  .portfolio-sheet {
+    width: 100%;
+    right: -100%;
+  }
+}
 @media (max-width: 768px) {
   .wrap {
     padding: 0 22px;
