@@ -874,9 +874,21 @@
     <span class="wa-txt" data-fr="Parler à un expert" data-en="Talk to an expert">Parler à un expert</span>
   </a>
 
+  <!-- Supabase JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
   (function(){
     // ---- CONFIG : à personnaliser par HK Studio ----
+    var WA_NUMBER = '2250747558219'; // Numéro WhatsApp HK Studio (format international, sans +)
+    
+    // --- Supabase client initialization ---
+    var SUPABASE_URL  = "https://gyzzvnslvnvtbsqtzksf.supabase.co";
+    var SUPABASE_ANON = "sb_publishable_IHbBlI4JC22WU6lwEUgHiA_tq6CQyn3";
+    var supabaseClient = null;
+    if (typeof supabase !== 'undefined') {
+      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+    }
+    var MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/gw219czdmkgbympvsopcjo9owndcsxi9";
     var WA_NUMBER = '2250747558219'; // Numéro WhatsApp HK Studio (format international, sans +)
     var WA_MSG = {
       fr: 'Bonjour HK Studio, je souhaite un diagnostic gratuit pour mon entreprise.',
@@ -949,10 +961,68 @@
         else { f.style.borderColor = ''; }
       });
       if(!ok) return;
-      // NOTE: brancher ici l'envoi réel (email / CRM / webhook). Pour l'instant : confirmation visuelle.
+
+      var nomVal = document.getElementById('f-nom').value.trim();
+      var entVal = document.getElementById('f-ent').value.trim();
+      var secVal = document.getElementById('f-sec').value.trim();
+      var waVal = document.getElementById('f-wa').value.trim();
+      var pbVal = document.getElementById('f-pb').value.trim();
+
+      // 1. Save to Supabase
+      if (supabaseClient) {
+        supabaseClient.from('leads').insert({
+          type: 'diagnostic',
+          name: nomVal,
+          company: entVal,
+          sector: secVal,
+          phone: waVal,
+          message: pbVal
+        }).then(function(res) {
+          if (res.error) {
+            console.error('Error saving lead to Supabase:', res.error);
+          }
+        });
+      }
+
+      // 1.5. Send to Make.com Webhook
+      if (typeof fetch !== 'undefined') {
+        fetch(MAKE_WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            type: 'diagnostic',
+            name: nomVal,
+            company: entVal,
+            sector: secVal,
+            phone: waVal,
+            message: pbVal
+          })
+        }).catch(function(err) {
+          console.error('Error sending to Make:', err);
+        });
+      }
+
+      // 2. Format custom WhatsApp message
+      var waMsgText = "*Nouveau Diagnostic Gratuit - HK Studio*\n\n" +
+                      "• *Nom* : " + nomVal + "\n" +
+                      "• *Entreprise* : " + entVal + "\n" +
+                      "• *Secteur* : " + secVal + "\n" +
+                      "• *WhatsApp* : " + waVal + "\n" +
+                      "• *Problème principal* : " + pbVal + "\n";
+      
+      var waCustomUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(waMsgText);
+
       form.style.display = 'none';
       success.classList.add('show');
       refreshWa();
+
+      // Override the success screen button with the custom WhatsApp message
+      var successWa = document.getElementById('successWa');
+      if (successWa) {
+        successWa.setAttribute('href', waCustomUrl);
+      }
     });
 
     // Reveal on scroll

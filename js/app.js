@@ -2,6 +2,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- Supabase client initialization ---
+  const SUPABASE_URL  = "https://gyzzvnslvnvtbsqtzksf.supabase.co";
+  const SUPABASE_ANON = "sb_publishable_IHbBlI4JC22WU6lwEUgHiA_tq6CQyn3";
+  let supabaseClient = null;
+  if (typeof supabase !== 'undefined') {
+    supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+  }
+  const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/gw219czdmkgbympvsopcjo9owndcsxi9";
+
   // --- 1. ACTIVE NAVIGATION TAB HIGHLIGHT ---
   const path = window.location.pathname;
   const page = path.split('/').pop() || 'index.html';
@@ -551,12 +560,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const name = contactName.value.trim();
       const email = contactEmail.value.trim();
+      const company = contactCompany.value.trim();
+      const phone = contactPhone.value.trim();
+      const message = contactMessage.value.trim();
+
+      // 1. Save to Supabase database
+      if (supabaseClient) {
+        supabaseClient.from('leads').insert({
+          type: 'brief',
+          name: name,
+          email: email,
+          company: company || null,
+          phone: phone || null,
+          message: message || null,
+          need: selectedNeed,
+          budget: selectedBudget
+        }).then(({ error }) => {
+          if (error) {
+            console.error('Error saving lead to Supabase:', error);
+          }
+        });
+      }
+
+      // 1.5. Send to Make.com Webhook
+      fetch(MAKE_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          type: 'brief',
+          name: name,
+          email: email,
+          company: company || null,
+          phone: phone || null,
+          message: message || null,
+          need: selectedNeed,
+          budget: selectedBudget
+        })
+      }).catch(err => console.error('Error sending to Make:', err));
+
+      // 2. Open WhatsApp with pre-filled details
+      const WA_NUMBER = '2250747558219';
+      let recommendedStack = '';
+      switch(selectedNeed) {
+        case 'automation': recommendedStack = 'Make.com, n8n.io, REST APIs'; break;
+        case 'ai-agents': recommendedStack = 'OpenAI API, Claude, Flowise RAG'; break;
+        case 'crm': recommendedStack = 'All-in-one CRM, Twilio, SMS workflows'; break;
+        case 'data-web': recommendedStack = 'Supabase, PostgreSQL, Next.js, Looker Studio'; break;
+      }
+      
+      let budgetText = '';
+      switch(selectedBudget) {
+        case 'small': budgetText = 'Moins de 1M FCFA (<1500€)'; break;
+        case 'medium': budgetText = '1M - 3M FCFA (1500€ - 4500€)'; break;
+        case 'large': budgetText = 'Plus de 3M FCFA (>4500€)'; break;
+      }
+
+      let waMessage = `*Nouveau Brief Projet - HK Studio*\n\n` +
+                      `• *Nom* : ${name}\n` +
+                      `• *Email* : ${email}\n` +
+                      `• *Entreprise* : ${company || 'Non spécifié'}\n` +
+                      `• *Téléphone* : ${phone || 'Non spécifié'}\n` +
+                      `• *Besoin* : ${selectedNeed.toUpperCase()} (${recommendedStack})\n` +
+                      `• *Budget* : ${budgetText}\n`;
+      if (message) {
+        waMessage += `• *Problème/Goulot* : ${message}\n`;
+      }
+      
+      const waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(waMessage);
+      window.open(waUrl, '_blank');
 
       const confirmMsg = currentLang === 'fr'
         ? `Merci ${name} ! Votre brief a bien été compilé. Notre équipe vous recontactera à l'adresse ${email} sous 24h avec un plan de route.`
         : `Thank you ${name}! Your project brief has been compiled. Our team will get back to you at ${email} within 24h with a custom roadmap.`;
 
       alert(confirmMsg);
+
+      // Reset form
       projectBriefForm.reset();
       selectedNeed = 'automation';
       selectedBudget = 'small';
