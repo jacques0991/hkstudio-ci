@@ -11,6 +11,9 @@
   <meta name="keywords" content="automatisation PME, CRM, automatisation WhatsApp, digitalisation assurance, Abidjan, Côte d'Ivoire, HK Studio, diagnostic gratuit">
   <meta name="author" content="HK Studio">
   <link rel="canonical" href="https://hkstudio-ci.com/">
+  <link rel="alternate" hreflang="fr" href="https://hkstudio-ci.com/">
+  <link rel="alternate" hreflang="en" href="https://hkstudio-ci.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://hkstudio-ci.com/">
   <meta property="og:title" content="Automatisation WhatsApp et CRM à Abidjan | HK Studio">
   <meta property="og:description" content="Automatisez WhatsApp, vos relances et votre CRM avec HK Studio à Abidjan. Diagnostic gratuit.">
   <meta property="og:type" content="website">
@@ -974,7 +977,17 @@
 
     // Language toggle
     document.querySelectorAll('#lang button').forEach(function(b){
-      b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); });
+      b.addEventListener('click', function(){
+        var t = b.getAttribute('data-lang');
+        var alt = document.querySelector('link[rel="alternate"][hreflang="' + t + '"]');
+        if (alt && t !== lang) {
+          try { localStorage.setItem('hk_lang', t); } catch (e) {}
+          var dest = new URL(alt.getAttribute('href'), window.location.href);
+          window.location.href = dest.pathname + dest.search + dest.hash;
+          return;
+        }
+        applyLang(t);
+      });
     });
 
     // Mobile drawer
