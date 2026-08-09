@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // --- 2. BILINGUAL SYSTEM and THEME MANAGEMENT ---
-  let currentLang = localStorage.getItem('hk_lang') || 'fr';
+  let currentLang = document.documentElement.getAttribute('data-page-lang') || localStorage.getItem('hk_lang') || 'fr';
   const langButtons = document.querySelectorAll('.lang button, .lang-drawer button');
 
   // A. Theme Switcher Logic
@@ -110,7 +110,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Bind language click events
   langButtons.forEach(b => {
     b.addEventListener('click', () => {
-      setLang(b.dataset.lang);
+      const targetLang = b.dataset.lang;
+      const alt = document.querySelector(`link[rel="alternate"][hreflang="${targetLang}"]`);
+      if (alt && targetLang !== currentLang) {
+        try { localStorage.setItem('hk_lang', targetLang); } catch (e) {}
+        const dest = new URL(alt.getAttribute('href'), window.location.href);
+        window.location.href = dest.pathname + dest.search + dest.hash;
+        return;
+      }
+      setLang(targetLang);
     });
   });
 
