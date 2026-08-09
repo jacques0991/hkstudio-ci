@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://hkstudio-ci.com/</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/about.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/services.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/work.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/method.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/roi.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hkstudio-ci.com/contact.html</loc>
-    </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hkstudio-ci.com/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/about.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/services.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/work.html</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/method.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/roi.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://hkstudio-ci.com/contact.html</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
 </urlset>
