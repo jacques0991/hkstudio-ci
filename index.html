@@ -200,7 +200,7 @@
       background:radial-gradient(circle,rgba(31,78,121,.55),transparent 62%);pointer-events:none}
     .hero::after{content:"";position:absolute;bottom:-40%;left:-12%;width:520px;height:520px;border-radius:50%;
       background:radial-gradient(circle,rgba(232,104,28,.14),transparent 65%);pointer-events:none}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:84px 0 92px;position:relative;z-index:2}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:84px 0 92px;position:relative;z-index:2;margin-left:20px}
     .hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.55rem);font-weight:800;margin-bottom:22px}
     .hero h1 .hl{color:var(--orange)}
     .hero .lead{font-size:1.2rem;color:#c4d3e6;margin-bottom:30px;max-width:560px}
@@ -486,6 +486,7 @@
     <a class="d-link" href="method.html" data-fr="Méthode" data-en="Method">Méthode</a>
     <a class="d-link" href="roi.html" data-fr="Calculateur ROI" data-en="ROI Calculator">Calculateur ROI</a>
     <a class="d-link" href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    <div class="lang lang-drawer-home" style="margin:14px 0 4px"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
     <a class="btn" href="#diagnostic" id="drawerCta" data-fr="Diagnostic gratuit" data-en="Free diagnostic">Diagnostic gratuit</a>
   </div>
   <div class="overlay" id="overlay"></div>
@@ -961,7 +962,7 @@
         var val = el.getAttribute('data-'+l+'-placeholder');
         if(val !== null) el.setAttribute('placeholder', val);
       });
-      document.querySelectorAll('#lang button').forEach(function(b){
+      document.querySelectorAll('.lang button').forEach(function(b){
         b.classList.toggle('on', b.getAttribute('data-lang') === l);
       });
       refreshWa();
@@ -976,7 +977,7 @@
     }
 
     // Language toggle
-    document.querySelectorAll('#lang button').forEach(function(b){
+    document.querySelectorAll('.lang button').forEach(function(b){
       b.addEventListener('click', function(){
         var t = b.getAttribute('data-lang');
         var alt = document.querySelector('link[rel="alternate"][hreflang="' + t + '"]');

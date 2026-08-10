@@ -1568,7 +1568,8 @@ footer .logo {
     padding: 0 22px;
   }
   
-  .nav-links, .nav-right .btn {
+  .nav-links, .nav-right .btn,
+  .nav-right .lang, .nav-right .theme-btn {
     display: none;
   }
   
@@ -1586,7 +1587,8 @@ footer .logo {
     padding: 0 22px;
   }
   
-  .nav-links, .nav-right .btn {
+  .nav-links, .nav-right .btn,
+  .nav-right .lang, .nav-right .theme-btn {
     display: none;
   }
   

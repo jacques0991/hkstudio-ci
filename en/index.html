@@ -163,7 +163,7 @@
       background:radial-gradient(circle,rgba(31,78,121,.55),transparent 62%);pointer-events:none}
     .hero::after{content:"";position:absolute;bottom:-40%;left:-12%;width:520px;height:520px;border-radius:50%;
       background:radial-gradient(circle,rgba(232,104,28,.14),transparent 65%);pointer-events:none}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:84px 0 92px;position:relative;z-index:2}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:84px 0 92px;position:relative;z-index:2;margin-left:20px}
     .hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.55rem);font-weight:800;margin-bottom:22px}
     .hero h1 .hl{color:var(--orange)}
     .hero .lead{font-size:1.2rem;color:#c4d3e6;margin-bottom:30px;max-width:560px}
@@ -447,8 +447,9 @@
 <a class="d-link" data-en="Case studies" data-fr="Réalisations" href="/en/work.html">Case studies</a>
 <a class="d-link" data-en="Method" data-fr="Méthode" href="/en/method.html">Method</a>
 <a class="d-link" data-en="ROI Calculator" data-fr="Calculateur ROI" href="/en/roi.html">ROI Calculator</a>
-<a class="d-link" data-en="Contact" data-fr="Contact" href="/en/contact.html">Contact</a>
-<a class="btn" data-en="Free diagnostic" data-fr="Diagnostic gratuit" href="#diagnostic" id="drawerCta">Free diagnostic</a>
+    <a class="d-link" data-en="Contact" data-fr="Contact" href="/en/contact.html">Contact</a>
+<div class="lang lang-drawer-home" style="margin:14px 0 4px"><button data-lang="fr">FR</button><button class="on" data-lang="en">EN</button></div>
+    <a class="btn" data-en="Free diagnostic" data-fr="Diagnostic gratuit" href="#diagnostic" id="drawerCta">Free diagnostic</a>
 </div>
 <div class="overlay" id="overlay"></div>
 <!-- ============ HEADER ============ -->
@@ -905,7 +906,7 @@
         var val = el.getAttribute('data-'+l+'-placeholder');
         if(val !== null) el.setAttribute('placeholder', val);
       });
-      document.querySelectorAll('#lang button').forEach(function(b){
+      document.querySelectorAll('.lang button').forEach(function(b){
         b.classList.toggle('on', b.getAttribute('data-lang') === l);
       });
       refreshWa();
@@ -920,7 +921,7 @@
     }
 
     // Language toggle
-    document.querySelectorAll('#lang button').forEach(function(b){
+    document.querySelectorAll('.lang button').forEach(function(b){
       b.addEventListener('click', function(){
         var t = b.getAttribute('data-lang');
         var alt = document.querySelector('link[rel="alternate"][hreflang="' + t + '"]');
