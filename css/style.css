@@ -1369,7 +1369,7 @@ nav {
 }
 .input-row, #contactName,
  #contactEmail, #contactCompany, #contactPhone {
-  color: #fff;
+  color: var(--ink);
 }
 .config-form input, .config-form textarea {
   width: 100%;
@@ -1387,7 +1387,7 @@ nav {
 
 }
 #contactMessage{
-  color: #fff;
+  color: var(--ink);
 }
 /* Technical Live Code Preview (Right Pane) */
 .config-preview {
