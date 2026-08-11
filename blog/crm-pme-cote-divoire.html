@@ -53,6 +53,8 @@
     .post .callout p{margin:0}
     .post .cta-box{border:1px solid var(--accent,#e8562d);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
     .post .cta-box p{margin-bottom:18px}
+
+
   </style>
 </head>
 <body>
@@ -73,6 +75,7 @@
       <a href="/contact.html">Contact</a>
     </div>
     <div class="drawer-footer">
+      <div class="lang-drawer"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
       <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
       <a href="/contact.html" class="btn" style="width: 100%; text-align: center;">Démarrer un Projet</a>
     </div>
@@ -93,6 +96,7 @@
           <a href="/contact.html">Contact</a>
         </div>
         <div class="nav-right">
+          <div class="lang"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
           <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
           <a href="/contact.html" class="btn">Projet</a>
           <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
@@ -108,6 +112,7 @@
           <p class="crumbs mono"><a href="/">Accueil</a> / <a href="/blog/">Blog</a> / CRM & ventes</p>
           <h1>CRM pour PME en Côte d'Ivoire : c'est quoi, lequel choisir, à quel prix</h1>
           <span class="meta mono">Publié le 11 août 2026 · HK Studio · 8 min de lecture</span>
+
 
           <p>Votre base clients vit dans un cahier, trois fichiers Excel et la mémoire de vos vendeurs ? Vous êtes comme la majorité des PME ivoiriennes — et c'est précisément ce qui vous coûte des ventes chaque semaine. Ce guide explique sans jargon ce qu'est un CRM, comment savoir si vous en avez besoin, et comment choisir sans vous ruiner.</p>
 
@@ -155,6 +160,7 @@
           <p>Souvent oui. Plusieurs CRM sérieux ont des versions gratuites suffisantes pour une petite équipe. Le vrai coût n'est pas la licence : c'est la configuration, la connexion à WhatsApp et la discipline d'utilisation. Mieux vaut un CRM gratuit bien utilisé qu'un CRM cher abandonné.</p>
           <h3>Combien de temps pour mettre en place un CRM ?</h3>
           <p>Pour une PME, comptez une à trois semaines : configuration, import de la base clients existante, connexion aux canaux (WhatsApp, e-mail) et formation de l'équipe. L'adoption complète par l'équipe prend un à deux mois.</p>
+
 
         </article>
       </div>
@@ -205,7 +211,19 @@
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.7 15L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20z"/></svg>
     <span class="wa-txt">Parler à un expert</span>
   </a>
-
   <script src="/js/app.js" defer></script>
+  <script>
+    // Blog FR uniquement : le bouton EN renvoie vers la version anglaise du site
+    document.querySelectorAll('.lang button, .lang-drawer button').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+        if (b.dataset.lang === 'en') {
+          try { localStorage.setItem('hk_lang', 'en'); } catch (err) {}
+          window.location.href = '/en/';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>

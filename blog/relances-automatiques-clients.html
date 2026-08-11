@@ -53,6 +53,8 @@
     .post .callout p{margin:0}
     .post .cta-box{border:1px solid var(--accent,#e8562d);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
     .post .cta-box p{margin-bottom:18px}
+
+
   </style>
 </head>
 <body>
@@ -73,6 +75,7 @@
       <a href="/contact.html">Contact</a>
     </div>
     <div class="drawer-footer">
+      <div class="lang-drawer"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
       <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
       <a href="/contact.html" class="btn" style="width: 100%; text-align: center;">Démarrer un Projet</a>
     </div>
@@ -93,6 +96,7 @@
           <a href="/contact.html">Contact</a>
         </div>
         <div class="nav-right">
+          <div class="lang"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
           <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
           <a href="/contact.html" class="btn">Projet</a>
           <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
@@ -108,6 +112,7 @@
           <p class="crumbs mono"><a href="/">Accueil</a> / <a href="/blog/">Blog</a> / Automatisation WhatsApp</p>
           <h1>Relances automatiques : comment récupérer les clients qui ne répondent plus</h1>
           <span class="meta mono">Publié le 11 août 2026 · HK Studio · 6 min de lecture</span>
+
 
           <p>Dans la vente, le silence n'est pas un non. Un prospect qui a demandé un devis puis disparu est le plus souvent occupé, hésitant, ou en train de comparer — pas parti. Le problème : personne n'a le temps de relancer manuellement 40 conversations. C'est exactement le travail que l'automatisation fait mieux que nous, sans oubli et sans fatigue.</p>
 
@@ -144,6 +149,7 @@
           <p>Pas si elles sont bien écrites et espacées. Ce qui fait fuir, c'est le harcèlement quotidien ou les messages impersonnels. Une relance utile, polie et signée est perçue comme du professionnalisme — la plupart des clients remercient d'avoir été relancés.</p>
           <h3>Peut-on automatiser les relances sans l'API WhatsApp ?</h3>
           <p>Partiellement : des rappels internes peuvent dire à votre équipe qui relancer chaque matin, et c'est déjà un progrès énorme. L'envoi automatique des messages eux-mêmes, à grande échelle, demande l'API WhatsApp Business.</p>
+
 
         </article>
       </div>
@@ -194,7 +200,19 @@
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.7 15L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20z"/></svg>
     <span class="wa-txt">Parler à un expert</span>
   </a>
-
   <script src="/js/app.js" defer></script>
+  <script>
+    // Blog FR uniquement : le bouton EN renvoie vers la version anglaise du site
+    document.querySelectorAll('.lang button, .lang-drawer button').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+        if (b.dataset.lang === 'en') {
+          try { localStorage.setItem('hk_lang', 'en'); } catch (err) {}
+          window.location.href = '/en/';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>

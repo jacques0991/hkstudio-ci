@@ -53,6 +53,8 @@
     .post .callout p{margin:0}
     .post .cta-box{border:1px solid var(--accent,#e8562d);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
     .post .cta-box p{margin-bottom:18px}
+
+
   </style>
 </head>
 <body>
@@ -73,6 +75,7 @@
       <a href="/contact.html">Contact</a>
     </div>
     <div class="drawer-footer">
+      <div class="lang-drawer"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
       <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
       <a href="/contact.html" class="btn" style="width: 100%; text-align: center;">Démarrer un Projet</a>
     </div>
@@ -93,6 +96,7 @@
           <a href="/contact.html">Contact</a>
         </div>
         <div class="nav-right">
+          <div class="lang"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
           <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
           <a href="/contact.html" class="btn">Projet</a>
           <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
@@ -108,6 +112,7 @@
           <p class="crumbs mono"><a href="/">Accueil</a> / <a href="/blog/">Blog</a> / Digitalisation</p>
           <h1>Comment digitaliser son entreprise en Côte d'Ivoire : le guide pratique</h1>
           <span class="meta mono">Publié le 11 août 2026 · HK Studio · 9 min de lecture</span>
+
 
           <p>« Il faut vous digitaliser. » Tout le monde le dit — les banques, les institutions, les concurrents. Mais concrètement, pour une PME à Abidjan, ça veut dire quoi ? Acheter un logiciel ? Faire un site web ? Poster sur les réseaux ? Ce guide remet les choses dans l'ordre : ce que la digitalisation change vraiment, par où commencer, et les pièges qui coûtent cher.</p>
 
@@ -161,6 +166,7 @@
           <h3>Faut-il embaucher un informaticien pour se digitaliser ?</h3>
           <p>Non. Les outils modernes s'utilisent sans compétence technique une fois configurés. Le vrai besoin, c'est un accompagnement ponctuel pour choisir les bons outils, les connecter entre eux et former l'équipe — pas un salarié à plein temps.</p>
 
+
         </article>
       </div>
     </section>
@@ -210,7 +216,19 @@
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.7 15L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20z"/></svg>
     <span class="wa-txt">Parler à un expert</span>
   </a>
-
   <script src="/js/app.js" defer></script>
+  <script>
+    // Blog FR uniquement : le bouton EN renvoie vers la version anglaise du site
+    document.querySelectorAll('.lang button, .lang-drawer button').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+        if (b.dataset.lang === 'en') {
+          try { localStorage.setItem('hk_lang', 'en'); } catch (err) {}
+          window.location.href = '/en/';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>

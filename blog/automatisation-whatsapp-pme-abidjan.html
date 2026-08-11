@@ -53,6 +53,8 @@
     .post .callout p{margin:0}
     .post .cta-box{border:1px solid var(--accent,#e8562d);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
     .post .cta-box p{margin-bottom:18px}
+
+
   </style>
 </head>
 <body>
@@ -73,6 +75,7 @@
       <a href="/contact.html">Contact</a>
     </div>
     <div class="drawer-footer">
+      <div class="lang-drawer"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
       <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
       <a href="/contact.html" class="btn" style="width: 100%; text-align: center;">Démarrer un Projet</a>
     </div>
@@ -93,6 +96,7 @@
           <a href="/contact.html">Contact</a>
         </div>
         <div class="nav-right">
+          <div class="lang"><button data-lang="fr" class="on">FR</button><button data-lang="en">EN</button></div>
           <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
           <a href="/contact.html" class="btn">Projet</a>
           <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
@@ -108,6 +112,7 @@
           <p class="crumbs mono"><a href="/">Accueil</a> / <a href="/blog/">Blog</a> / Automatisation WhatsApp</p>
           <h1>Automatisation WhatsApp pour PME à Abidjan : le guide complet</h1>
           <span class="meta mono">Publié le 9 août 2026 · HK Studio · 10 min de lecture</span>
+
 
           <p>En Côte d'Ivoire, WhatsApp n'est pas un canal de communication parmi d'autres : c'est <strong>le</strong> canal. C'est là que vos prospects posent leurs questions, comparent les prix, négocient et commandent. Et c'est aussi là que beaucoup de PME perdent des ventes chaque jour — messages restés sans réponse le soir, prospects jamais relancés, commandes notées à la main puis oubliées.</p>
           <p>Ce guide explique concrètement ce que l'automatisation WhatsApp peut faire pour une PME ivoirienne, ce qu'elle ne peut pas faire, combien elle coûte, et comment démarrer sans se tromper.</p>
@@ -181,6 +186,7 @@
           <h3>Combien de temps prend la mise en place ?</h3>
           <p>Quelques jours pour un premier niveau, quelques semaines pour un agent IA connecté à vos outils, audit compris. Tout commence par le <a href="/contact.html">diagnostic gratuit</a>.</p>
 
+
         </article>
       </div>
     </section>
@@ -224,7 +230,19 @@
       </div>
     </div>
   </footer>
-
   <script src="/js/app.js" defer></script>
+  <script>
+    // Blog FR uniquement : le bouton EN renvoie vers la version anglaise du site
+    document.querySelectorAll('.lang button, .lang-drawer button').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+        if (b.dataset.lang === 'en') {
+          try { localStorage.setItem('hk_lang', 'en'); } catch (err) {}
+          window.location.href = '/en/';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
