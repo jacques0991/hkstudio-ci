@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Automatisation, CRM et IA pour PME | HK Studio</title>
+  <meta name="description" content="Guides pratiques sur l'automatisation WhatsApp, le CRM et l'IA pour les PME en Côte d'Ivoire. Conseils concrets, orientés résultats, par HK Studio à Abidjan.">
+  <link rel="canonical" href="https://hkstudio-ci.com/blog/">
+  <meta property="og:title" content="Blog — Automatisation, CRM et IA pour PME | HK Studio">
+  <meta property="og:description" content="Guides pratiques sur l'automatisation WhatsApp, le CRM et l'IA pour les PME en Côte d'Ivoire.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hkstudio-ci.com/blog/">
+  <meta property="og:site_name" content="HK Studio">
+  <meta property="og:locale" content="fr_CI">
+  <meta property="og:image" content="https://hkstudio-ci.com/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog — Automatisation, CRM et IA pour PME | HK Studio">
+  <meta name="twitter:description" content="Guides pratiques sur l'automatisation WhatsApp, le CRM et l'IA pour les PME en Côte d'Ivoire.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Blog HK Studio","url":"https://hkstudio-ci.com/blog/","description":"Guides pratiques sur l'automatisation WhatsApp, le CRM et l'IA pour les PME en Côte d'Ivoire.","inLanguage":"fr","publisher":{"@type":"Organization","name":"HK Studio","url":"https://hkstudio-ci.com/"}}</script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2J06YW21D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G2J06YW21D');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <style>
+    .post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;margin-top:40px}
+    .post-card{border:1px solid var(--line,rgba(128,128,128,.25));border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease}
+    .post-card:hover{transform:translateY(-4px)}
+    .post-card .cat{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent,#e8562d)}
+    .post-card h2{font-size:1.25rem;line-height:1.35;margin:0}
+    .post-card h2 a{text-decoration:none;color:inherit}
+    .post-card p{opacity:.75;font-weight:300;margin:0}
+    .post-card .meta{font-size:.8rem;opacity:.55;margin-top:auto}
+  </style>
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="/"><img class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="/services.html">Services</a>
+      <a href="/roi.html">Calculateur ROI</a>
+      <a href="/about.html">À propos</a>
+      <a href="/work.html">Réalisations</a>
+      <a href="/method.html">Méthode</a>
+      <a href="/blog/" class="on">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+      <a href="/contact.html" class="btn" style="width: 100%; text-align: center;">Démarrer un Projet</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="/"><img class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="/services.html">Services</a>
+          <a href="/roi.html">Calculateur ROI</a>
+          <a href="/about.html">À propos</a>
+          <a href="/work.html">Réalisations</a>
+          <a href="/method.html">Méthode</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Sombre</button>
+          <a href="/contact.html" class="btn">Projet</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent">06 — Ressources</p>
+        <h1>Le Blog HK Studio</h1>
+        <p class="muted" style="max-width: 60ch; font-size: 1.1rem; font-weight: 300;">Guides pratiques et retours de terrain sur l'automatisation WhatsApp, le CRM et l'IA pour les PME en Côte d'Ivoire.</p>
+      </div>
+    </section>
+
+    <section class="pad" style="padding-top: 40px;">
+      <div class="wrap">
+                <div class="post-grid">
+
+          <article class="post-card">
+            <span class="cat mono">Automatisation WhatsApp</span>
+            <h2><a href="/blog/automatisation-whatsapp-pme-abidjan.html">Automatisation WhatsApp pour PME à Abidjan : le guide complet</a></h2>
+            <p>Réponses automatiques, relances, agent IA, connexion CRM : ce que l'automatisation WhatsApp peut vraiment faire pour une PME ivoirienne et par où commencer.</p>
+            <span class="meta mono">9 août 2026 · 10 min</span>
+          </article>
+
+          <article class="post-card">
+            <span class="cat mono">Digitalisation</span>
+            <h2><a href="/blog/digitaliser-entreprise-cote-divoire.html">Comment digitaliser son entreprise en Côte d'Ivoire : le guide pratique</a></h2>
+            <p>Les 4 étapes dans le bon ordre, les coûts réels, les erreurs qui font échouer les projets — et par où commencer dès cette semaine.</p>
+            <span class="meta mono">11 août 2026 · 9 min</span>
+          </article>
+
+          <article class="post-card">
+            <span class="cat mono">Automatisation WhatsApp</span>
+            <h2><a href="/blog/whatsapp-business-vs-api.html">WhatsApp Business ou API : lequel choisir pour votre PME ?</a></h2>
+            <p>Application gratuite ou API payante ? Différences, prix, limites et le critère de décision en une phrase.</p>
+            <span class="meta mono">11 août 2026 · 6 min</span>
+          </article>
+
+          <article class="post-card">
+            <span class="cat mono">CRM &amp; ventes</span>
+            <h2><a href="/blog/crm-pme-cote-divoire.html">CRM pour PME en Côte d'Ivoire : c'est quoi, lequel choisir, à quel prix</a></h2>
+            <p>Sortir d'Excel sans se ruiner : les critères qui comptent vraiment, l'erreur n°1, et le plan d'action en 5 étapes.</p>
+            <span class="meta mono">11 août 2026 · 8 min</span>
+          </article>
+
+          <article class="post-card">
+            <span class="cat mono">Automatisation WhatsApp</span>
+            <h2><a href="/blog/relances-automatiques-clients.html">Relances automatiques : récupérer les clients qui ne répondent plus</a></h2>
+            <p>Un devis sans réponse n'est pas un refus. La séquence 48h / 7j / 30j qui récupère les prospects silencieux, sans harceler.</p>
+            <span class="meta mono">11 août 2026 · 6 min</span>
+          </article>
+
+          <article class="post-card">
+            <span class="cat mono">Assurance</span>
+            <h2><a href="/blog/digitaliser-cabinet-courtage-assurance.html">Digitaliser un cabinet de courtage d'assurance en Côte d'Ivoire</a></h2>
+            <p>Échéances, quittances, relances, WhatsApp comme guichet : les 3 chantiers qui transforment un cabinet, dans l'ordre.</p>
+            <span class="meta mono">11 août 2026 · 7 min</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="/"><img loading="lazy" class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img loading="lazy" class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p>Startup studio d'innovation digitale. Accélérer la transformation numérique des entreprises africaines grâce à l'IA, la data et l'intelligence économique.</p>
+          <p style="color:var(--accent);font-weight:600;margin-top:12px">L'architecture de votre croissance</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Navigation</h4>
+          <a href="/services.html">Services</a>
+          <a href="/roi.html">Calculateur ROI</a>
+          <a href="/about.html">À propos</a>
+          <a href="/work.html">Réalisations</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Réseaux</h4>
+          <a href="https://www.linkedin.com/company/hkstudio-ci" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/hk_studio.ci?igsh=a3hzczIyMjQ2anFj" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/199LNMYsLp/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@hk.studio84" target="_blank" rel="noopener">TikTok</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Bingerville – Cité Belle Vue, Carrefour Adama</span>
+          <span>Côte d'Ivoire</span>
+          <a href="tel:+2252722574785">Tél. : +225 27 22 57 47 85</a>
+          <a href="https://wa.me/2250747558219" target="_blank" rel="noopener">WhatsApp : +225 07 47 55 82 19</a>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span>Tous droits réservés</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
