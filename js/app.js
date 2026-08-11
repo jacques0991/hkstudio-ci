@@ -17,7 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   document.querySelectorAll('.nav-links a, .drawer-links a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === page) {
+    const hrefPath = new URL(href, window.location.href).pathname;
+    if (path.indexOf('/blog/') !== -1) {
+      // Section blog (FR ou EN) : surligner l'onglet Blog
+      if (hrefPath === '/blog/' || hrefPath === '/en/blog/') {
+        link.classList.add('active-nav');
+      }
+    } else if (hrefPath === path) {
+      link.classList.add('active-nav');
+    } else if (href === page) {
       link.classList.add('active-nav');
     } else if ((page === 'index.html' || page === '') && href === 'index.html') {
       link.classList.add('active-nav');

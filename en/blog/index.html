@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-page-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Automation, CRM &amp; AI for SMEs | HK Studio</title>
+  <meta name="description" content="Practical guides on WhatsApp automation, CRM and AI for SMEs in Côte d'Ivoire. Concrete, results-driven advice by HK Studio in Abidjan.">
+  <link rel="canonical" href="https://hkstudio-ci.com/en/blog/">
+  <link rel="alternate" hreflang="fr" href="https://hkstudio-ci.com/blog/">
+  <link rel="alternate" hreflang="en" href="https://hkstudio-ci.com/en/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://hkstudio-ci.com/blog/">
+  <meta property="og:title" content="Blog — Automation, CRM &amp; AI for SMEs | HK Studio">
+  <meta property="og:description" content="Practical guides on WhatsApp automation, CRM and AI for SMEs in Côte d'Ivoire.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hkstudio-ci.com/en/blog/">
+  <meta property="og:site_name" content="HK Studio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://hkstudio-ci.com/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog — Automation, CRM &amp; AI for SMEs | HK Studio">
+  <meta name="twitter:description" content="Practical guides on WhatsApp automation, CRM and AI for SMEs in Côte d'Ivoire.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "HK Studio Blog", "url": "https://hkstudio-ci.com/en/blog/", "description": "Practical guides on WhatsApp automation, CRM and AI for SMEs in Côte d'Ivoire.", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "HK Studio", "url": "https://hkstudio-ci.com/"}}</script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2J06YW21D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G2J06YW21D');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <style>
+    .post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;margin-top:40px}
+    .post-card{border:1px solid var(--line,rgba(128,128,128,.25));border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease}
+    .post-card:hover{transform:translateY(-4px)}
+    .post-card .cat{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent,#e8562d)}
+    .post-card h2{font-size:1.25rem;line-height:1.35;margin:0}
+    .post-card h2 a{text-decoration:none;color:inherit}
+    .post-card p{opacity:.75;font-weight:300;margin:0}
+    .post-card .meta{font-size:.8rem;opacity:.55;margin-top:auto}
+    .post-card .see-more{align-self:flex-end;display:inline-flex;align-items:center;gap:7px;margin-top:auto;
+      background:var(--accent,#e8562d);color:#fff;border-radius:50px;padding:9px 18px;text-decoration:none;
+      font-family:'Archivo',sans-serif;font-weight:600;font-size:.82rem;transition:transform .2s}
+    .post-card .see-more:hover{transform:translateY(-2px);color:#fff}
+    .post-card .see-more svg{width:13px;height:13px}
+  </style>
+</head>
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a class="logo" href="/en/"><img class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+      <button class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="/en/services.html">Services</a>
+      <a href="/en/roi.html">ROI Calculator</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/work.html">Case studies</a>
+      <a href="/en/method.html">Method</a>
+      <a href="/en/blog/">Blog</a>
+      <a href="/en/contact.html">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <div class="lang-drawer"><button data-lang="fr">FR</button><button data-lang="en" class="on">EN</button></div>
+      <button id="themeToggleDrawer" class="theme-btn" data-fr="Sombre" data-en="Dark">Dark</button>
+      <a href="/en/contact.html" class="btn" style="width: 100%; text-align: center;">Start a Project</a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="/en/"><img class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+        <div class="nav-links">
+          <a href="/en/services.html">Services</a>
+          <a href="/en/roi.html">ROI Calculator</a>
+          <a href="/en/about.html">About</a>
+          <a href="/en/work.html">Case studies</a>
+          <a href="/en/method.html">Method</a>
+          <a href="/en/blog/">Blog</a>
+          <a href="/en/contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+          <div class="lang"><button data-lang="fr">FR</button><button data-lang="en" class="on">EN</button></div>
+          <button id="themeToggle" class="theme-btn" data-fr="Sombre" data-en="Dark">Dark</button>
+          <a href="/en/contact.html" class="btn">Project</a>
+          <button class="burger" id="burgerBtn" aria-label="menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="subpage-hero">
+      <div class="wrap">
+        <p class="tagline mono accent">06 — Resources</p>
+        <h1>The HK Studio Blog</h1>
+        <p class="muted" style="max-width: 60ch; font-size: 1.1rem; font-weight: 300;">Practical guides and field lessons on WhatsApp automation, CRM and AI for SMEs in Côte d'Ivoire.</p>
+      </div>
+    </section>
+
+    <section class="pad" style="padding-top: 40px;">
+      <div class="wrap">
+        <div class="post-grid">
+
+          <article class="post-card">
+            <span class="cat mono">WhatsApp Automation</span>
+            <h2><a href="/en/blog/automatisation-whatsapp-pme-abidjan.html">WhatsApp Automation for SMEs in Abidjan: the complete guide</a></h2>
+            <p>Auto-replies, follow-ups, AI agents, CRM connection: what WhatsApp automation can really do for an Ivorian SME, what it costs and where to start..</p>
+            <a class="see-more" href="/en/blog/automatisation-whatsapp-pme-abidjan.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="post-card">
+            <span class="cat mono">Digitalization</span>
+            <h2><a href="/en/blog/digitaliser-entreprise-cote-divoire.html">How to digitalize your business in Côte d'Ivoire: the practical guide</a></h2>
+            <p>The concrete steps to digitalize an Ivorian SME: where to start, which tools to choose, what it costs and the mistakes to avoid.</p>
+            <a class="see-more" href="/en/blog/digitaliser-entreprise-cote-divoire.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="post-card">
+            <span class="cat mono">WhatsApp Automation</span>
+            <h2><a href="/en/blog/whatsapp-business-vs-api.html">WhatsApp Business or WhatsApp API: which one should your SME choose?</a></h2>
+            <p>Free app or WhatsApp Business API? Differences, pricing, limits and use cases to choose the right solution for the size of your business..</p>
+            <a class="see-more" href="/en/blog/whatsapp-business-vs-api.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="post-card">
+            <span class="cat mono">CRM & sales</span>
+            <h2><a href="/en/blog/crm-pme-cote-divoire.html">CRM for SMEs in Côte d'Ivoire: what it is, which to choose, at what price</a></h2>
+            <p>What a CRM is, why your Ivorian SME needs one, how to choose without mistakes and what it costs.</p>
+            <a class="see-more" href="/en/blog/crm-pme-cote-divoire.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="post-card">
+            <span class="cat mono">WhatsApp Automation</span>
+            <h2><a href="/en/blog/relances-automatiques-clients.html">Automatic follow-ups: how to win back customers who stopped replying</a></h2>
+            <p>An unanswered quote is not a refusal.</p>
+            <a class="see-more" href="/en/blog/relances-automatiques-clients.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="post-card">
+            <span class="cat mono">Insurance</span>
+            <h2><a href="/en/blog/digitaliser-cabinet-courtage-assurance.html">Digitalizing an insurance brokerage in Côte d'Ivoire: the guide</a></h2>
+            <p>Renewals tracked by hand, forgotten reminders, scattered files: how an Ivorian brokerage digitalizes, step by step..</p>
+            <a class="see-more" href="/en/blog/digitaliser-cabinet-courtage-assurance.html" aria-label="Read the full article">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a class="logo" href="/en/"><img loading="lazy" class="logo-onblack" src="/assets/img/logo-hk-white.png" alt="HK STUDIO"><img loading="lazy" class="logo-onwhite" src="/assets/img/logo-hk-dark.png" alt="HK STUDIO"></a>
+          <p>Digital innovation startup studio. Accelerating the digital transformation of African enterprises through AI, data and economic intelligence.</p>
+          <p style="color:var(--accent);font-weight:600;margin-top:12px">The architecture of your growth</p>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Navigation</h4>
+          <a href="/en/services.html">Services</a>
+          <a href="/en/roi.html">ROI Calculator</a>
+          <a href="/en/about.html">About</a>
+          <a href="/en/work.html">Case studies</a>
+          <a href="/en/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Social</h4>
+          <a href="https://www.linkedin.com/company/hkstudio-ci" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/hk_studio.ci?igsh=a3hzczIyMjQ2anFj" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/199LNMYsLp/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@hk.studio84" target="_blank" rel="noopener">TikTok</a>
+        </div>
+        <div class="foot-col">
+          <h4 class="mono">Contact</h4>
+          <a href="mailto:hello@hkstudio-ci.com">hello@hkstudio-ci.com</a>
+          <span>Bingerville – Cité Belle Vue, Carrefour Adama</span>
+          <span>Côte d'Ivoire</span>
+          <a href="tel:+2252722574785">Tel.: +225 27 22 57 47 85</a>
+          <a href="https://wa.me/2250747558219" target="_blank" rel="noopener">WhatsApp: +225 07 47 55 82 19</a>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 HK Studio — <span>All rights reserved</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/2250747558219?text=Hello%20HK%20Studio%2C%20I%20would%20like%20a%20free%20diagnostic%20for%20my%20business." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.7 15L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20z"/></svg>
+    <span class="wa-txt">Talk to an expert</span>
+  </a>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
