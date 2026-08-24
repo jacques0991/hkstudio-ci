@@ -1,0 +1,168 @@
+# HK Studio — Contenu complet (llms-full.txt)
+
+> HK Studio est un cabinet de croissance commerciale et de digitalisation basé à Bingerville (Abidjan, Côte d'Ivoire). Nous transformons les conversations WhatsApp des PME et des cabinets de courtage d'assurance en chiffre d'affaires grâce à l'automatisation commerciale, au CRM, à l'intelligence artificielle et à la digitalisation des process. Signature : « L'architecture de votre croissance » — nous construisons la machine qui vend pendant que vous dirigez.
+
+Ce fichier `llms-full.txt` réunit le **contenu complet** des pages clés de hkstudio-ci.com (accueil + guides de blog) pour permettre aux assistants IA de comprendre et de citer HK Studio avec précision. Il complète le fichier `llms.txt` (index concis).
+
+## À propos de HK Studio
+
+- **Localisation :** Bingerville — Cité Belle Vue, Carrefour Adama, Abidjan, Côte d'Ivoire.
+- **Cœur de métier :** automatisation commerciale, automatisation WhatsApp (Business & API), CRM & pipeline commercial, IA appliquée aux ventes, digitalisation des cabinets de courtage d'assurance.
+- **Domaines d'expertise (12) :** acquisition de prospects · CRM & pipeline commercial · WhatsApp Business & API · intelligence artificielle · automatisation · marketing digital · création de contenu · sites web & tunnels · publicité Meta & Google · tableaux de bord · formation commerciale · conseil stratégique.
+- **Secteurs accompagnés :** courtiers d'assurance, agences immobilières, restaurants, cabinets dentaires, e-commerce, boutiques et PME de services (commerce/distribution, assurance/courtage, immobilier, services/conseil, industrie/production).
+- **Méthode :** démarche en 4 étapes (Diagnostic, Système, Automatisation, Suivi), au sein d'un cycle complet : Diagnostic → Stratégie → Déploiement → Automatisation → Formation → Optimisation → Croissance.
+- **Résultats visés :** plus de prospects qualifiés, plus de rendez-vous fixés, plus de ventes signées, équipes plus productives, processus automatisés, meilleure expérience client, décisions pilotées par la donnée.
+- **Pourquoi HK Studio :** orientés résultats (« on se juge sur vos chiffres ») · expertise IA & automatisation (cœur de métier) · systèmes propriétaires (plateforme intégrée) · pensé pour les PME africaines (budgets réels, WhatsApp d'abord) · accompagnement de proximité (interlocuteur unique à Abidjan).
+- **Offre d'entrée :** diagnostic stratégique offert (45 min, sans engagement) → plan d'action chiffré.
+- **Contact :** hello@hkstudio-ci.com · Tél. +225 27 22 57 47 85 · WhatsApp +225 07 47 55 82 19 · LinkedIn https://www.linkedin.com/company/hkstudio-ci
+- **Entité légale :** HK STUDIO SARL · Capital 5 000 000 FCFA · RCCM CI-ABJ-03-2025-B12-04821 · NCC 2505524 S.
+- **Langues :** site en français et en anglais (https://hkstudio-ci.com/en/).
+
+---
+
+# 1. Page d'accueil — hkstudio-ci.com
+
+## Transformez vos conversations WhatsApp en chiffre d'affaires.
+
+HK Studio installe des systèmes commerciaux et des automatisations qui captent vos prospects, les relancent automatiquement et pilotent vos ventes — pour les PME et cabinets d'assurance d'Abidjan.
+
+*Diagnostic offert · Réponse sous 24 h · Sans engagement.*
+
+### Résultats mesurés (missions réelles)
+
+- **85 %** des demandes WhatsApp traitées sans intervention humaine.
+- **90 h** de travail administratif économisées par mois.
+- **4 jours → 4 minutes** de délai de traitement chez un client.
+- **24/7** : les prospects suivis jour et nuit.
+
+## Le vrai problème — reconnaissez-vous ces situations ?
+
+La plupart des entreprises ne perdent pas des clients par manque d'offres — mais par manque de suivi.
+
+- **Des prospects WhatsApp sans réponse.** Un client écrit, personne ne répond assez vite… et il achète chez le concurrent. Chaque message ignoré est une vente perdue.
+- **Des relances oubliées.** Un devis envoyé, puis plus rien. Sans relance systématique, la moitié de vos opportunités s'éteignent en silence.
+- **Un suivi commercial flou.** Vous ne savez pas où en est chaque client, ni quel commercial fait quoi. Piloter sans visibilité, c'est piloter à l'aveugle.
+- **Trop de saisie manuelle.** Vos équipes recopient des commandes, des factures, des contacts… Ce temps perdu ne sert ni vos clients, ni votre croissance.
+
+**Bonne nouvelle : tout cela se corrige avec le bon système.**
+
+## Ce que nous installons — des systèmes qui travaillent pour vos ventes
+
+- **Automatisation des PME.** On élimine les tâches manuelles répétitives — saisies, relances, rapports — et on fiabilise vos processus pour libérer vos équipes.
+- **CRM et suivi commercial.** On centralise tous vos prospects dans un CRM clair : vous savez qui relancer, quand, et où en est chaque affaire d'un coup d'œil.
+- **Automatisation WhatsApp.** On branche un assistant intelligent sur votre WhatsApp : il répond, qualifie vos prospects et planifie les relances — 24 h/24.
+- **Digitalisation assurance.** Pour les cabinets de courtage : devis plus rapides, souscriptions suivies et renouvellements jamais oubliés. Un parcours client fluide.
+
+## Notre méthode — une démarche claire, en 4 étapes
+
+1. **Diagnostic** — On analyse votre activité et on identifie précisément où vous perdez du temps et des clients.
+2. **Système** — On conçoit le système commercial adapté à votre entreprise, simple, à votre échelle, sans usine à gaz.
+3. **Automatisation** — On automatise la capture, la relance et le suivi de vos prospects. Le travail répétitif se fait tout seul.
+4. **Suivi** — On mesure les résultats, on ajuste et on vous accompagne dans la durée. Vos gains s'améliorent avec le temps.
+
+## Preuves concrètes — des résultats mesurables, à Abidjan
+
+**Immobilier · WhatsApp — Assistant client WhatsApp.** *Situation :* plus de 300 demandes WhatsApp par jour ; les commerciaux passaient 80 % de leur temps à répondre aux mêmes questions au lieu de faire des visites. *Solution :* un assistant IA branché sur le catalogue, qui répond sur les disponibilités, les prix et les zones, puis qualifie et planifie la relance dans le CRM. *Résultat :* 85 % des demandes résolues sans intervention humaine — et zéro prospect oublié.
+
+**Distribution · Opérations — Automatisation de la facturation.** *Situation :* plus de 150 factures et bons de commande saisis à la main chaque jour dans Sage, source d'erreurs de stock et de retards. *Solution :* des scénarios automatisés relient les commandes terrain (WhatsApp) à Sage, avec un lecteur intelligent qui extrait les données des PDF reçus. *Résultat :* 90 heures de saisie économisées chaque mois et des livraisons accélérées de 24 h.
+
+## Spécial cabinets de courtage
+
+Dans l'assurance, chaque devis lent et chaque renouvellement oublié est un contrat qui part chez un concurrent. HK Studio digitalise le parcours client de bout en bout : devis émis plus vite et réponses sans délai ; relances de renouvellement automatiques (plus aucun contrat oublié) ; suivi clair de chaque dossier, de la demande à la signature.
+
+## Témoignages
+
+- ★★★★★ « Nos prospects WhatsApp ne tombent plus dans le vide. L'assistant répond tout de suite. » — DK, dirigeant, agence immobilière, Cocody.
+- ★★★★★ « On a récupéré près de 90 heures par mois sur la saisie. L'équipe comptable respire. » — RY, responsable des opérations, distribution FMCG, Yopougon.
+- ★★★★★ « Enfin une équipe qui parle résultats et pas jargon. La méthode est claire. » — AF, gérant, cabinet de courtage, Plateau.
+
+## Questions fréquentes (accueil)
+
+- **Combien coûte le diagnostic ?** Rien. Le diagnostic est gratuit et sans engagement : on examine votre situation et on vous dit concrètement où sont vos gains possibles. Vous décidez ensuite.
+- **En combien de temps voit-on des résultats ?** Les premières automatisations sont souvent en place en quelques semaines. On commence par le levier qui rapporte le plus vite, puis on étend.
+- **Faut-il changer tous mes outils actuels ?** Non. On se connecte à ce que vous utilisez déjà — WhatsApp, votre logiciel de gestion, vos formulaires — plutôt que de tout remplacer.
+- **Est-ce adapté à une petite entreprise ?** Oui. On commence simple, à votre échelle et à votre budget.
+- **Mes données sont-elles en sécurité ?** Oui. Vos données restent les vôtres, sur des outils sécurisés, avec des accès confidentiels et maîtrisés.
+- **Travaillez-vous en dehors d'Abidjan ?** Oui. Basés à Bingerville, nous accompagnons des entreprises partout en Côte d'Ivoire, à distance comme sur le terrain.
+
+## Recevez votre diagnostic gratuit
+
+Dites-nous où ça coince ; on vous rappelle sous 24 h avec un plan clair pour capter plus de clients et perdre moins de temps. 100 % gratuit, sans engagement. Réponse d'un expert sous 24 h. Un plan concret, pas du jargon. Réservation en ligne : https://hkstudio-ci.com/contact.html.
+
+---
+
+# 2. Blog — Guides complets
+
+## 2.1 Automatisation WhatsApp pour PME à Abidjan : le guide complet
+*Source : https://hkstudio-ci.com/blog/automatisation-whatsapp-pme-abidjan.html*
+
+En Côte d'Ivoire, WhatsApp n'est pas un canal de communication parmi d'autres : c'est **le** canal. C'est là que vos prospects posent leurs questions, comparent les prix, négocient et commandent. Et c'est aussi là que beaucoup de PME perdent des ventes chaque jour — messages restés sans réponse le soir, prospects jamais relancés, commandes notées à la main puis oubliées. Ce guide explique concrètement ce que l'automatisation WhatsApp peut faire pour une PME ivoirienne, ce qu'elle ne peut pas faire, combien elle coûte, et comment démarrer sans se tromper.
+
+**Pourquoi automatiser WhatsApp ?** Une PME qui vend sur WhatsApp fait face à trois problèmes structurels : le **temps de réponse** (un prospect qui écrit à 21h et reçoit une réponse le lendemain a souvent déjà acheté ailleurs) ; le **suivi** (impossible de savoir qui attend un devis, qui a promis de revenir, qui a payé un acompte) ; la **dépendance à une personne** (si tout passe par le téléphone du gérant, l'entreprise s'arrête quand il est indisponible). L'automatisation ne remplace pas l'équipe : elle prend en charge le répétitif pour que les vendeurs se concentrent sur conseiller, négocier, conclure.
+
+**Les 4 niveaux d'automatisation WhatsApp.** *Niveau 1 — les bases de WhatsApp Business (gratuit) :* message d'accueil, message d'absence, réponses rapides, catalogue ; statiques, ne qualifient pas et ne relancent pas. *Niveau 2 — le menu automatique et la qualification :* accueille chaque contact, identifie sa demande, collecte les coordonnées et route vers la bonne personne. *Niveau 3 — l'agent IA connecté à vos données :* répond en langage naturel 24h/24 sur vos produits, prix et délais réels, gère plusieurs conversations et passe la main à un humain si besoin. *Niveau 4 — l'écosystème complet WhatsApp + CRM + relances :* chaque conversation alimente un CRM (fiche, statut, historique) et les relances partent seules (devis sans réponse depuis 48h, panier abandonné, client inactif). **Point clé :** l'automatisation la plus rentable n'est presque jamais le chatbot seul, c'est la connexion WhatsApp ↔ CRM ↔ relances.
+
+**WhatsApp Business ou API ?** L'application gratuite suffit pour les bases (un seul utilisateur, outils basiques, pas d'intégration). L'API est nécessaire dès qu'on veut un agent IA, plusieurs opérateurs sur un même numéro, une connexion CRM ou des relances à grande échelle (facturation à la conversation). Règle simple : si vos ventes dépendent de WhatsApp et que vous recevez plus de 20-30 conversations/jour, l'API se rentabilise vite.
+
+**Deux situations types.** *Commerce/distribution :* un agent connecté au stock répond immédiatement (prix, disponibilité), propose la livraison et enregistre la commande, nuit et jours fériés compris. *Services (assurance, immobilier, éducation) :* la vente se joue sur le suivi — un devis sans réponse signifie « pas maintenant », pas « non » ; des relances automatiques (48h, 1 semaine, 1 mois) récupèrent une part des dossiers dormants.
+
+**Combien ça coûte, combien ça rapporte.** Le coût dépend du niveau ; la vraie question est ce que coûte l'**absence** d'automatisation (heures perdues, prospects hors horaires, devis jamais relancés). **Les 4 erreurs à éviter :** le bot qui bloque sans porte de sortie humaine ; automatiser le désordre (clarifier le processus d'abord) ; ignorer la voix de la marque ; ne rien mesurer. **Par où commencer :** configurer WhatsApp Business cette semaine, mesurer deux semaines, puis faire auditer le processus de vente. *Votre WhatsApp peut vendre pendant que vous dormez.*
+
+## 2.2 Comment digitaliser son entreprise en Côte d'Ivoire : le guide pratique
+*Source : https://hkstudio-ci.com/blog/digitaliser-entreprise-cote-divoire.html*
+
+**Digitaliser, ce n'est pas « avoir un site web ».** C'est remplacer les opérations manuelles chronophages par des systèmes automatisés. Les PME ivoiriennes perdent de l'argent dans quatre domaines : les ventes (prospects sans réponse, devis non relancés), la gestion clients (bases informelles), l'administratif (factures manuelles, stocks approximatifs) et la visibilité en ligne. Un site web seul ne résout que le dernier problème ; les trois premiers, plus lucratifs, nécessitent des outils de gestion et d'automatisation.
+
+**Les 4 étapes, dans le bon ordre.** *1. Cartographier avant d'acheter :* lister les processus et blocages avant d'investir. *2. Centraliser la relation client :* un CRM simple où chaque client a une fiche, un statut, un historique. *3. Automatiser le répétitif :* réponses WhatsApp programmées, relances, notifications, rapports — des dizaines d'heures/mois économisées. *4. Être trouvable :* site pro, fiche Google Business avec avis, présence sur les réseaux — en dernier, pour ne pas attirer des prospects vers un processus désorganisé. **Principe fondamental :** digitalisez les processus fonctionnels, jamais les processus flous. Clarifiez d'abord, outillez ensuite.
+
+**Combien ça coûte, combien ça rapporte.** Plusieurs petits projets classés par rendement : certains quasi gratuits (WhatsApp Business, fiche Google), d'autres structurels (CRM intégré, agent IA, portail client). La vraie question : le coût de l'inaction (heures perdues, prospects abandonnés, factures oubliées). **Les 3 erreurs qui font échouer :** tout faire simultanément ; choisir l'outil avant le besoin ; négliger l'équipe (formation et accompagnement essentiels). **Cette semaine :** configurer WhatsApp Business, revendiquer la fiche Google Business, documenter chaque tâche répétitive de plus de 15 min/jour. *Votre entreprise peut fonctionner sans vous épuiser.*
+
+## 2.3 WhatsApp Business ou API WhatsApp : lequel choisir pour votre PME ?
+*Source : https://hkstudio-ci.com/blog/whatsapp-business-vs-api.html*
+
+**WhatsApp Business : gratuit, simple, mais limité.** L'application offre profil d'entreprise, catalogue, message d'accueil et d'absence, réponses rapides, étiquettes. Limites : un seul utilisateur principal, aucune vraie connexion CRM, pas de relances à grande échelle, réponses automatiques statiques (le message d'accueil ne comprend pas la question).
+
+**L'API WhatsApp Business : le moteur des systèmes sérieux.** Ce n'est pas une application mais une porte d'accès technique sur laquelle on branche des systèmes : un agent IA en langage naturel 24h/24 ; plusieurs opérateurs sur le même numéro ; la connexion au CRM (chaque conversation alimente la fiche client) ; les relances automatiques et campagnes sortantes (modèles validés par Meta) ; des statistiques réelles. En contrepartie : c'est payant (facturation à la conversation) et se met en place avec un prestataire.
+
+**Le critère de décision :** moins de 20-30 conversations/jour et un seul vendeur → l'application gratuite bien configurée suffit ; au-delà, ou dès qu'on veut CRM + relances + agent IA → l'API se rentabilise vite. **Chemin recommandé :** exploiter à fond l'application gratuite, mesurer deux semaines, et si vous débordez, faire auditer le flux de vente avant de payer. *FAQ :* l'API est payante (Meta facture à la conversation + coût plateforme) ; un numéro existant peut être migré vers l'API (mais ne peut plus être utilisé dans l'app classique) ; une petite boutique (< 20-30 conversations/jour) n'a en général pas besoin de l'API.
+
+## 2.4 CRM pour PME en Côte d'Ivoire : c'est quoi, lequel choisir, à quel prix
+*Source : https://hkstudio-ci.com/blog/crm-pme-cote-divoire.html*
+
+**Le problème que le CRM résout.** Trois questions : combien de prospects vous ont contacté ce mois-ci ? Combien attendent une réponse ou un devis ? Qui relancer cette semaine ? Si vous ne pouvez pas répondre en 30 secondes, des ventes se perdent. Le CRM donne une fiche à chaque client/prospect (coordonnées, historique, statut, prochaine action) et transforme le pipeline en tableau lisible.
+
+**Signes qu'il vous en faut un maintenant :** des prospects disent « vous ne m'avez jamais répondu » ; quand un vendeur s'absente, personne ne sait où en sont ses dossiers ; doublons ou clients facturés deux fois ; relances qui dépendent de la mémoire ; impossible de chiffrer le pipeline en FCFA. Deux signes cochés = le CRM est déjà rentable.
+
+**Comment choisir sans se tromper.** Critères qui comptent en Côte d'Ivoire : la **connexion WhatsApp** (sinon ressaisie manuelle et abandon) ; la **simplicité** (créer une fiche en 30 s depuis un téléphone) ; le **mobile/hors-ligne** ; le **prix en rapport avec la taille** (de 0 à ~15 000 FCFA/utilisateur/mois). **L'erreur n°1 :** croire que l'outil suffit — un CRM vide est un cimetière de bonnes intentions. La réussite tient à la connexion automatique aux canaux (WhatsApp), des règles simples respectées, et des relances automatisées. **Coûts/gains :** licence de 0 à ~15 000 FCFA/utilisateur/mois ; mise en place d'une à trois semaines ; relancer systématiquement les devis récupère une part significative des affaires « perdues ». *FAQ :* un CRM centralise clients et prospects ; une version gratuite suffit souvent pour démarrer ; comptez 1 à 3 semaines de mise en place, 1 à 2 mois d'adoption.
+
+## 2.5 Relances automatiques : récupérer les clients qui ne répondent plus
+*Source : https://hkstudio-ci.com/blog/relances-automatiques-clients.html*
+
+**Dans la vente, le silence n'est pas un non.** Un prospect qui a demandé un devis puis disparu est souvent occupé, hésitant ou en train de comparer — pas parti. Le problème : personne n'a le temps de relancer manuellement 40 conversations. C'est ce que l'automatisation fait mieux que nous, sans oubli ni fatigue.
+
+**Le gisement caché :** comptez les devis du mois dernier restés sans réponse — 40 à 60 % dans une PME typique. Ces dossiers ont déjà coûté le plus cher (prospection, discussion, chiffrage). Une séquence de relances en récupère une part, mois après mois.
+
+**La séquence qui fonctionne : 48h / 7 jours / 30 jours.** *Relance 1 (48h) — lever un blocage :* « Avez-vous pu regarder la proposition ? Un point à clarifier ? » (celle qui rapporte le plus). *Relance 2 (7 j) — apporter de la valeur :* une précision sur les délais, une option de paiement, un exemple de résultat client. *Relance 3 (30 j) — la porte ouverte :* « Je clos le dossier ; s'il redevient d'actualité, répondez à ce message. » **Règle :** chaque message doit être utile au client, pas seulement à vous.
+
+**Comment l'automatiser :** le déclencheur est le statut CRM (« devis envoyé » → la séquence démarre et s'arrête dès réponse). Deux niveaux : rappels internes (liste quotidienne des relances, sans API) et envoi automatique via l'API WhatsApp. **Mesurer :** le taux de réponse par relance et le CA récupéré par mois. *FAQ :* trois relances bien espacées suffisent ; bien écrites et espacées, elles ne font pas fuir (le harcèlement, oui) ; sans API on peut au moins automatiser les rappels internes.
+
+## 2.6 Digitaliser un cabinet de courtage d'assurance en Côte d'Ivoire
+*Source : https://hkstudio-ci.com/blog/digitaliser-cabinet-courtage-assurance.html*
+
+**Le courtage est un métier de suivi :** des dizaines/centaines de contrats, chacun avec échéance, quittances, relances, pièces. Tant que tout tient dans un tableur et la mémoire du fondateur, ça marche — jusqu'au renouvellement raté, au client parti chez un concurrent, au dossier de sinistre introuvable. **Pourquoi le courtage est idéal à digitaliser :** presque tout y est prévisible et répétitif (échéances connues un an à l'avance, circuits de relance identiques, pièces standard).
+
+**Chantier 1 — la base contrats et le mur des échéances :** chaque client, contrat et échéance dans une base unique (CRM adapté, pas un tableur) ; le système alerte à J-60, J-30 et J-7 avant chaque renouvellement et envoie un message WhatsApp personnalisé au bon moment → plus aucun renouvellement oublié, rétention en hausse. **Chantier 2 — les relances de primes et de pièces :** séquences automatiques de rappel de paiement et de pièces manquantes ; l'équipe n'intervient que quand le client répond. **Chantier 3 — WhatsApp comme guichet du cabinet :** un agent répond 24h/24 aux demandes standard (attestation, remboursement, pièces, RDV) et transmet à un humain hors cadre. **Point sensible : la confidentialité** — accès par rôle, données qui restent votre propriété, engagement de confidentialité du prestataire.
+
+**Ce que ça change :** taux de renouvellement en hausse, encaissements accélérés, capacité à grossir sans embaucher proportionnellement. **Par où commencer :** exporter le portefeuille (même imparfait), lister les 12 prochains mois d'échéances, mesurer une semaine de relances manuelles. *FAQ :* le premier chantier est le fichier des échéances ; les données d'assurés peuvent être confiées avec des précautions (confidentialité, accès restreints, propriété des données) ; le socle se met en place en quelques semaines.
+
+---
+
+# 3. Pages du site & coordonnées
+
+**Pages (français) :** Accueil (https://hkstudio-ci.com/) · Services (https://hkstudio-ci.com/services.html) · Méthode (https://hkstudio-ci.com/method.html) · Réalisations (https://hkstudio-ci.com/work.html) · Calculateur ROI (https://hkstudio-ci.com/roi.html) · Blog (https://hkstudio-ci.com/blog/) · À propos (https://hkstudio-ci.com/about.html) · Contact & prise de RDV (https://hkstudio-ci.com/contact.html).
+
+**Pages (anglais) :** https://hkstudio-ci.com/en/ · /en/services.html · /en/method.html · /en/work.html · /en/about.html · /en/contact.html.
+
+**Contact :** hello@hkstudio-ci.com · Tél. +225 27 22 57 47 85 · WhatsApp +225 07 47 55 82 19 · Bingerville — Cité Belle Vue, Carrefour Adama, Abidjan, Côte d'Ivoire · LinkedIn https://www.linkedin.com/company/hkstudio-ci.
+
+**Entité légale :** HK STUDIO SARL · Capital 5 000 000 FCFA · RCCM CI-ABJ-03-2025-B12-04821 · NCC 2505524 S. © 2026 HK Studio.
